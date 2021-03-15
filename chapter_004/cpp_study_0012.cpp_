@@ -1,0 +1,54 @@
+//
+// Created by 杨建伟 on 2021/2/17.
+//
+/**
+ * 解释 指针, 数组, 指针算术的 各种用法
+ */
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    double * pDouble = new double[4];
+    short *  pShort  = new short[4];
+
+    pDouble[0] = 1.0;
+    pDouble[1] = 3.0;
+    pDouble[2] = 5.0;
+    pDouble[3] = 6.0;
+
+    pShort[0] = 2;
+    pShort[1] = 4;
+    pShort[2] = 6;
+    pShort[3] = 8;
+
+    cout << "pDouble is :" << pDouble << endl;
+    cout << "pShort  is :" << pShort  << endl;
+
+    pDouble += 1;
+    pShort  += 1;
+
+    cout << "pDouble is :" << pDouble << endl;
+    cout << "pShort  is :" << pShort  << endl;
+    // 运行结果如下:
+    /**
+     * 说明:
+     * C++将数组名 解释为 指针或地址
+     * pDouble is :0xb664a0
+     * pShort  is :0xb66500
+     * pDouble is :0xb664a8
+     * pShort  is :0xb66502
+     */
+
+    return 0;
+}
+
+
+
+

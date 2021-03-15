@@ -1,0 +1,24 @@
+//
+// Created by 杨建伟 on 2021/2/19.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int i;
+    for (int i = 0; i < 5; i++) {
+        cout << "C++ can loops i is :" << i << endl;
+    }
+
+    return 0;
+}
+
+
+
+

@@ -1,0 +1,53 @@
+//
+// Created by 杨建伟 on 2021/3/4.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+
+using namespace std;
+
+int sum_arr_a(int array[], int arraySize);
+
+int sum_arr_b(int * array, int arraySize);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int arraySize = 5;
+    int array[5] = {1, 2, 3, 4, 5};
+
+    int count_a = sum_arr_a(array, arraySize);
+    int count_b = sum_arr_b(array, arraySize);
+
+    cout << "count_a = " << count_a << endl;
+    cout << "count_b = " << count_b << endl;
+    return 0;
+}
+
+int sum_arr_a(int array[], int arraySize) {
+    int result = 0;
+    for(int i = 0; i < arraySize; i++) {
+        result += array[i];
+    }
+    return result;
+}
+
+int sum_arr_b(int * array, int arraySize) {
+    int result = 0;
+    for(int i = 0; i < arraySize; i++) {
+        result += *(array + i);
+    }
+    return result;
+}
+
+
+
+

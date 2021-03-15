@@ -1,0 +1,45 @@
+//
+// Created by 杨建伟 on 2021/2/17.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char animal[20] = "bear";
+    const char * bird = "wren";
+
+    char * ps;
+
+    cout << animal << " and " << bird << endl;
+
+    cout << "Enter a kind of animal: " << endl;
+    cin >> animal;
+    ps = animal;
+    cout << ps << endl;
+
+    cout << "Before strcpy() :" << endl;
+    cout << animal << " at " << (int *) animal << endl;
+    cout << ps << " at " << (int *) ps << endl;
+
+    ps = new char[strlen(animal) + 1];
+    strcpy(ps, animal);
+
+    cout << "After strcpy() :" << endl;
+    cout << animal << " at " << (int *) animal << endl;
+    cout << ps << " at " << (int *) ps << endl;
+
+    // 特别注意垃圾回收
+    delete[] ps;
+
+    return 0;
+}
+
+
+
+

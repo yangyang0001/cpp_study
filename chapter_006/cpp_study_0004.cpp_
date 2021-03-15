@@ -1,0 +1,38 @@
+//
+// Created by 杨建伟 on 2021/2/25.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    cout << "please enter the char (y/n)? :";
+
+    char ch;
+    cin.get(ch);
+
+    if(ch == 'y' || ch == 'Y') {
+
+        cout << "ch is y" << endl;
+
+    } else if(ch == 'n' || ch == 'N'){
+        cout << "ch is n" << endl;
+    } else {
+        cout << "ch is not y/n" << endl;
+    }
+
+    return 0;
+}
+
+
+
+

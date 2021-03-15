@@ -1,0 +1,56 @@
+//
+// Created by 杨建伟 on 2021/2/25.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char ch;
+    cout << "please enter ch :";
+    cin.get(ch);
+
+    int chars = 0;  // 字符
+    int digit = 0;  // 数字
+    int punct = 0;  // 标点
+    int space = 0;  // 空格
+    int other = 0;  // 其他
+
+    while(ch != '@') {
+        if(isalpha(ch)) {
+            chars ++;
+        } else if(isdigit(ch)) {
+            digit ++;
+        } else if(ispunct(punct)) {
+            punct ++;
+        } else if (isspace(ch)) {
+            space ++;
+        } else {
+            other ++;
+        }
+
+        cin.get(ch);
+    }
+
+    cout << "chars = " << chars << endl;
+    cout << "digit = " << digit << endl;
+    cout << "punct = " << punct << endl;
+    cout << "space = " << space << endl;
+    cout << "other = " << other << endl;
+
+    return 0;
+}
+
+
+
+

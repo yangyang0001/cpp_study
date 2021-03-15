@@ -1,0 +1,57 @@
+//
+// Created by 杨建伟 on 2021/3/9.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+using namespace std;
+
+/**
+ * 引用变量用作 函数行参中
+ * @return
+ */
+void exchange(int & x, int & y) {
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+void exchange(int * x, int * y) {
+    int temp = * x;
+    * x = * y;
+    * y = temp;
+}
+
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    // 引用变量的使用
+    int a = 10;
+    int b = 100;
+
+    cout << "exchange before a = " << a << endl;
+    cout << "exchange before b = " << b << endl;
+
+    exchange(a, b);
+
+    cout << "exchange & after a = " << a << endl;
+    cout << "exchange & after b = " << b << endl;
+
+    exchange(&a, &b);
+
+    cout << "exchange * after a = " << a << endl;
+    cout << "exchange * after b = " << b << endl;
+
+    return 0;
+}
+
+

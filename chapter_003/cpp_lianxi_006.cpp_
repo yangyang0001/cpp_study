@@ -1,0 +1,27 @@
+//
+// Created by 杨建伟 on 2021/2/4.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    double distance;
+    double oil;
+    double per;
+
+    cout << "please enter distance:";
+    cin >> distance;
+    cout << "please enter oil:";
+    cin >> oil;
+
+    per = oil / distance * 100;
+    cout << "per is :" << per << endl;
+    return 0;
+}
+

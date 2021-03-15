@@ -1,0 +1,44 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    string word = "";
+    int count = 0;
+    int enter = 0;
+
+    char ch;
+    cout << "please enter the character , when is . quit :\n";
+    cin.get(ch);
+
+    while(ch != '.') {
+
+        if(ch == '\n') {
+            enter ++;
+        }
+
+        cout << ch;
+        count ++;
+        word += ch;
+        cin.get(ch);
+    }
+
+    cout << endl << "enter = " << enter << ", count = " << count << ", word = " << word << endl;
+    return 0;
+}
+
+
+
+

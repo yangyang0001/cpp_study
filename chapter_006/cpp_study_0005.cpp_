@@ -1,0 +1,49 @@
+//
+// Created by 杨建伟 on 2021/2/25.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int i = 0;
+    int arraySize = 6;
+    int array[arraySize];
+    int temp;
+
+    cout << "please enter the temp !" << endl;
+    cout << "First Value :";
+    cin >> temp;
+
+    while(i < arraySize && temp > 0) {
+        array[i] = temp;
+        i++;
+        if(i < arraySize) {
+            cout << "Next  Value :";
+            cin >> temp;
+        }
+    }
+
+    if(i > 0) {
+        for(int x : array) {
+            cout << "x = " << x << endl;
+        }
+    } else {
+        cout << "array is empty" << endl;
+    }
+
+    return 0;
+}
+
+
+
+

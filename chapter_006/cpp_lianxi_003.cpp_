@@ -1,0 +1,35 @@
+//
+// Created by 杨建伟 on 2021/3/2.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    string ch;
+    bool flag = true;
+    cout << "please enter char [c, p, t, g] :";
+    while(flag && cin >> ch) {
+        cin.clear();
+        switch (ch[0]) {
+            case 'c' : cout << "this is cat" << endl; flag = false; break;
+            case 'p' : cout << "this is pig" << endl; flag = false; break;
+            case 't' : cout << "this is tiger" << endl; flag = false; break;
+            case 'g' : cout << "this is good" << endl; flag = false; break;
+            default  : cout << "please enter char [c, p, t, g] :";
+        }
+    }
+
+    return 0;
+}
+

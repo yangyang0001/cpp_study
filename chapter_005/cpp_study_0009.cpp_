@@ -1,0 +1,38 @@
+//
+// Created by 杨建伟 on 2021/2/23.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char * a = new char[20];
+    char * b = new char[20];
+
+    a = "HELLO_WORLD";
+    b = "hello_world";
+
+    cout << "a = " << a << " at location is : " << (int *) a << endl;
+    cout << "b = " << b << " at location is : " << (int *) b << endl;
+
+    cout.setf(ios_base::boolalpha);
+    cout << "a == b        is : " << (a == b) << endl;
+    cout << "strcmp(a, b)  is : " << strcmp(a, b) << endl;
+
+    delete[] a;
+    delete[] b;
+
+    return 0;
+}
+
+
+
+

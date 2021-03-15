@@ -1,0 +1,42 @@
+//
+// Created by 杨建伟 on 2021/3/9.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+double cube(double x);
+double refcube(double & y);
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    double a = 10;
+    double b = 20;
+
+    cout << cube(a) << " = cube of " << a << endl;
+    cout << refcube(a) << " = cube of " << a << endl;
+
+    return 0;
+}
+
+double cube(double x) {
+    x *= x * x;
+    return x;
+}
+
+double refcube(double & y) {
+    y *= y * y;
+    return y;
+}
+
+

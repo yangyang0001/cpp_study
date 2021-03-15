@@ -1,0 +1,39 @@
+//
+// Created by 杨建伟 on 2021/2/23.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    cout << "please enter the delay seconds :";
+    float seconds;
+    cin >> seconds;
+
+    clock_t delay = seconds * CLOCKS_PER_SEC;
+    clock_t start = clock();
+
+    cout << "CLOCKS_PER_SEC is :" << CLOCKS_PER_SEC << endl;
+    cout << "delay is :" << delay << endl;
+    cout << "start is :" << start << endl;
+
+    while(clock() - start < delay) {
+
+    }
+
+    cout << "done" << endl;
+    return 0;
+}
+
+
+
+

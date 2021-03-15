@@ -1,0 +1,56 @@
+//
+// Created by 杨建伟 on 2021/3/14.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+using namespace std;
+
+string version1(const string & s1, const string & s2);
+string & version2(string & s1, const string & s2);
+string & version3(string & s1, const string & s2);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    string s1 = "aaa";
+    string s2 = "###";
+
+    string result1 = version1(s1, s2);
+    cout << "result1 = " << result1 << endl;
+
+    string result2 = version2(s1, s2);
+    cout << "result2 = " << result2 << endl;
+
+    string result3 = version3(s1, s2);
+    cout << "result3 = " << result3 << endl;
+
+    return 0;
+}
+
+string version1(const string & s1, const string & s2) {
+    string temp;
+    temp = s2 + s1 + s2;
+    return temp;
+}
+
+string & version2(string & s1, const string & s2) {
+    s1 = s2 + s1 + s2;
+    return s1;
+}
+
+// TODO unsafe to return the reference of local variable  方法禁止返回局部变量的引用
+string & version3(string & s1, const string & s2) {
+    string temp;
+    temp = s2 + s1 + s2;
+    return temp;
+}
+
+

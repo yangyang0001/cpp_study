@@ -1,0 +1,20 @@
+//
+// Created by 杨建伟 on 2021/1/18.
+//
+#include <iostream>
+using namespace std;
+
+string getUserNameAndPassword(string username, string password) {
+    return "username: " + username + ", password: " + password;
+}
+
+int main() {
+    string username = "";
+    cin >> username;
+    string password = "";
+    cin >> password;
+    string info = getUserNameAndPassword(username, password);
+    cout << info << endl;
+    return 0;
+}
+

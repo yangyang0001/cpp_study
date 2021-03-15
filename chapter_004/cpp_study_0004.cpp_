@@ -1,0 +1,32 @@
+//
+// Created by 杨建伟 on 2021/2/9.
+//
+#include <iostream>
+#include <climits>
+#include <string>
+#include <cstring>
+
+using namespace std;
+
+struct Person {
+    string username;
+    string password;
+};
+
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Person person1 = {"zhangsan", "123456"};
+    Person person2 = {"lisi", "123456"};
+
+    cout << person1.username + " " + person1.password << endl;
+    cout << person2.username + " " + person2.password << endl;
+
+    Person person3 = person1;
+    cout << person3.username + " " + person3.password << endl;
+
+    return 0;
+}
+

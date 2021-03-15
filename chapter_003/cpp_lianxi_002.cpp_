@@ -1,0 +1,24 @@
+//
+// Created by 杨建伟 on 2021/2/4.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+    double height;
+    double weight;
+
+    cout << "please enter your height(M) :";
+    cin >> height;
+    cout << endl;
+
+    cout << "please enter your weight(KG)   :";
+    cin >> weight;
+    cout << endl;
+
+    cout << "健康指数为: " << weight / (height * height) << endl;
+    return 0;
+}

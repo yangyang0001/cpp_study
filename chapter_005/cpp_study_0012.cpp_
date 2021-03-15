@@ -1,0 +1,35 @@
+//
+// Created by 杨建伟 on 2021/2/23.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+
+    int arraySize = 20;
+    char name[20];
+
+    cout << "please enter your name:" << endl;
+    cin >> name;
+
+    int i = 0;
+    while(name[i] != '\0') {
+        cout << "name[" << i << "] = " << name[i] << endl;
+        i++;
+    }
+
+    return 0;
+}
+
+
+
+

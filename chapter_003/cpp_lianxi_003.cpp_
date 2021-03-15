@@ -1,0 +1,33 @@
+//
+// Created by 杨建伟 on 2021/2/4.
+// 北纬度数 换算关系: 1度 = 60分, 1分=60秒
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+const double divisor = 60;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    // 设置度, 分, 秒
+    double degrees;
+    double minutes;
+    double seconds;
+    double results;
+
+    cout << "Enter a latitude in degrees, minutes, and seconds :" << endl;
+    cout << "First, enter the degrees :";
+    cin >> degrees;
+
+    cout << "Next , enter the minutes :";
+    cin >> minutes;
+
+    cout << "Last , enter the seconds :";
+    cin >> seconds;
+
+    results = degrees + (minutes / divisor) + (seconds / divisor / divisor);
+    cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds is " << results << " degrees." << endl;
+    return 0;
+}

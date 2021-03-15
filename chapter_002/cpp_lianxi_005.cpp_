@@ -1,0 +1,20 @@
+//
+// Created by 杨建伟 on 2021/1/18.
+//
+#include <iostream>
+
+using namespace std;
+
+double getHSWenDuFromSSWenDu(double sswd) {
+    return 1.8 * sswd + 32.0;
+}
+
+int main() {
+    double sswd = 0;
+    cout << "please enter the she shi wen du :";
+    cin >> sswd;
+    double huawd = getHSWenDuFromSSWenDu(sswd);
+    cout << "sswd is " << sswd << ", hswd is " << huawd << endl;
+    return 0;
+}
+

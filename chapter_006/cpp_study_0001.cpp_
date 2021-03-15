@@ -1,0 +1,47 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    cout << "please enter character :\n";
+    string word = "";
+
+    char ch;
+    int count = 0;
+    int space = 0;
+    cin.get(ch);
+//    ch = cin.get();
+
+    while(ch != '.') {
+        cout << ch;
+        if(ch == ' ') {
+            space ++;
+        }
+        count ++;
+        word += ch;
+
+        cin.get(ch);
+//        ch = cin.get();
+    }
+
+    cout << endl;
+    cout << "space = " << space << ", count = " << count << endl;
+    cout << "word  = '" << word << "', word.size = " << word.size() << endl;
+    return 0;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+//
+// Created by 杨建伟 on 2021/2/17.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    double wages[3] = {10000.0, 20000.0, 30000.0};
+    double * pw = wages;
+
+    cout << "pw = " << pw << ", * pw = " << * pw << endl;
+    pw += 1;
+    cout << "add 1 to the pw pointer :" << endl;
+    cout << "pw = " << pw << ", * pw = " << * pw << endl;
+
+    cout << "-----------------------------------------------------------------------------------" << endl;
+
+    short stacks[3] = {3, 2, 1};
+    short  * ps = &stacks[0];
+
+    cout << "ps = " << ps << ", * ps = " << * ps << endl;
+    ps += 1;
+    cout << "add 1 to the ps pointer :" << endl;
+    cout << "ps = " << ps << ", * ps = " << * ps << endl;
+
+    cout << "-----------------------------------------------------------------------------------" << endl;
+
+    cout << "stacks[0] = " << stacks[0] << endl;
+    cout << "stacks[1] = " << stacks[1] << endl;
+
+    cout << "*stacks       = " << * stacks << endl;
+    cout << "*(stacks + 0) = " << * (stacks + 0) << endl;
+
+    cout << sizeof(wages) << " = size of wages array"<< endl;
+    cout << sizeof(pw) << " = size of pw pointer" << endl;
+
+    return 0;
+}
+
+
+
+

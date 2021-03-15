@@ -1,0 +1,44 @@
+//
+// Created by 杨建伟 on 2021/2/23.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int productscores[10] = {20, 20, 20, 20, 20, 19, 20, 18, 20, 20};
+
+    for(int i = 0; productscores[i] == 20; i++) {
+        cout << "productscores[" << i << "] = " << productscores[i] << endl;
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    array<string, 2> clazz = {"zhangsan", "lisi"};
+    for(int i = 0; i < clazz.size(); i++) {
+        cout << "clazz[" << i<< "] = " << clazz[i] << endl;
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+    vector<string> vector(2);
+    vector[0] = "zhansan";
+    vector[1] = "lisi";
+
+    for(int i = 0; i < vector.size(); i++) {
+        cout << "vector[" << i << "] = " << vector.at(i) << endl;
+    }
+
+    return 0;
+}
+
+
+
+

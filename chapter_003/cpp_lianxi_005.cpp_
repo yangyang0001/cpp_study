@@ -1,0 +1,26 @@
+//
+// Created by 杨建伟 on 2021/2/4.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    long long allPersons;
+    long long usPersons;
+
+    cout << "please enter allPersons:";
+    cin >> allPersons;
+
+    cout << "please enter usPersons :";
+    cin >> usPersons;
+
+    double percentage = (double) usPersons / (double) allPersons;
+
+    cout << "percentage is :" << percentage << endl;
+    return 0;
+}
+

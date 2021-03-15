@@ -1,0 +1,35 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+
+    int count = 0;
+    int num;
+    cout << "please enter the number[0-9]:\n";
+    cin >> num;
+    while(num != 0) {
+        cout << num << endl;
+        count ++;
+        cin >> num;
+    }
+
+    cout << "count = " << count << endl;
+    return 0;
+}
+
+
+
+

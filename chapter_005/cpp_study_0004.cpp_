@@ -1,0 +1,50 @@
+//
+// Created by 杨建伟 on 2021/2/19.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int arraySize = 16;
+    long long array[arraySize];
+    array[0] = array[1] = 1LL;
+
+    for (int i = 2; i < arraySize; i++) {
+        array[i] = i * array[i - 1];
+    }
+
+    for (int i = 0; i < arraySize; i++) {
+        cout << i << "! = " << array[i] << endl;
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    // 体验不同的步长来 进行循环的方式
+    cout << "please the step is :";
+    int step;
+    cin >> step;
+    for(int i = 0; i < 100; i += step) {
+        cout << "i = " << i << endl;
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    // 使用for 循环字符串
+    string ss = "HelloWorld";
+    cout << ss << " at location is :" << (& ss)<< endl;
+    for (int i = 0; i < ss.length(); i++) {
+        cout << ss[i];
+    }
+
+    return 0;
+}
+
+
+
+

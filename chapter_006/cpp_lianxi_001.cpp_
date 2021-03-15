@@ -1,0 +1,60 @@
+//
+// Created by 杨建伟 on 2021/3/1.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char ch;
+    cout << "please enter the char:";
+
+    int space = 0;
+    int lower = 0;
+    int upper = 0;
+    int enter = 0;
+    int other = 0;
+
+    string lower_string = "";
+    string upper_string = "";
+
+    while((ch = cin.get()) != '@')  {
+        if(ch == '\n') {
+            enter ++;
+        } else if(isspace(ch)) {
+            space++;
+        } else if(islower(ch)) {
+            lower++;
+            lower_string += ch;
+        } else if(isupper(ch)) {
+            upper++;
+            upper_string += ch;
+        } else {
+            other++;
+        }
+        cin.clear();
+    }
+    cout << "space = " << space << endl;
+    cout << "lower = " << lower << endl;
+    cout << "upper = " << upper << endl;
+    cout << "enter = " << enter << endl;
+    cout << "other = " << other << endl;
+    cout << "lower_string = " << lower_string << endl;
+    cout << "upper_string = " << upper_string << endl;
+
+    cout << "a toupper = " << (char) toupper('a') << endl;
+    cout << "B tolower = " << (char) tolower('B') << endl;
+
+    return 0;
+}
+

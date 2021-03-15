@@ -1,0 +1,74 @@
+//
+// Created by 杨建伟 on 2021/3/12.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+using namespace std;
+
+struct Person {
+    string username;
+    string password;
+    int gender;
+    int age;
+};
+
+void assign_person(Person & person);
+void show_person(const Person & person);
+void clone_person(Person & target, const Person & source);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Person person0 = {"zhangsan", "000888", 1, 22};
+    Person person1 = {"lisi", "111888", 1, 18};
+    Person person2 = {"wangwu", "222888", 1, 20};
+    Person person3 = {"zhaoliu", "333888", 1, 30};
+    Person person4 = {"wangchao", "444888", 1, 40};
+    Person person5 = {"mahan", "555888", 1, 66};
+
+    Person value;
+
+    // 调用assign_person
+    assign_person(value);
+    show_person(value);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    // 调用copy_person
+    clone_person(value, person5);
+    show_person(value);
+
+    return 0;
+}
+
+void assign_person(Person & person) {
+    person.username = "zhangsan";
+    person.password = "888";
+    person.gender = 1;
+    person.age = 22;
+}
+
+void show_person(const Person & person) {
+    cout << "person.username = " << person.username << endl;
+    cout << "person.password = " << person.password << endl;
+    cout << "person.gender   = " << person.gender << endl;
+    cout << "person.age      = " << person.age << endl;
+}
+
+void clone_person(Person & target, const Person & source) {
+    target.username = source.username;
+    target.password = source.password;
+    target.gender   = source.gender;
+    target.age      = source.age;
+}
+
+

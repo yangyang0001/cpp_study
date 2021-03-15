@@ -1,0 +1,36 @@
+//
+// Created by 杨建伟 on 2021/2/12.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int updates = 100;
+    int * p_updates = &updates;
+
+    cout << "updates        is :" << updates << endl;
+    cout << "* p_updates    is :" << * p_updates << endl;
+
+    cout << "------------------------------------------------------------------------------------" << endl;
+
+    cout << "&updates       is :" << &updates << endl;
+    cout << "p_updates      is :" << p_updates << endl;
+
+    cout << "------------------------------------------------------------------------------------" << endl;
+
+    * p_updates += 1;
+    cout << "updates        is :" << updates << endl;
+    cout << "* p_updates    is :" << * p_updates << endl;
+
+
+
+    return 0;
+}
+

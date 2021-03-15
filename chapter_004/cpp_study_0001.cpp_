@@ -1,0 +1,89 @@
+//
+// Created by 杨建伟 on 2021/2/5.
+//
+/**
+ * 数组的定义个格式: type arrayName[arraySize] = {}
+ */
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield); // fixed-point
+
+    // 数组的定义格式: type arrayName[arraySize]
+
+    int yams[3] = {6, 8 , 10};
+    int yamcosts[3] = {20, 30, 5};
+
+    long total;
+    for(int i = 0; i < 3; i++) {
+        total += yams[i] * yamcosts[i];
+    }
+
+    cout << "total is " << total << endl;
+
+    // 定义 int 类型的数组
+    int intArray[3] = {1, 3, 5};
+    cout << "intArray size is :" << sizeof(intArray) / sizeof(intArray[0])<< endl;
+
+    int intArraySize = sizeof(intArray) / sizeof(int);
+    for (int i = 0; i < intArraySize; i++) {
+        cout << "intArray[" << i << "] is :" << intArray[i] << endl;
+    }
+
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+
+    // 定义 long 类型的数组
+    long longArray[5] = {10000000, 10000002, 10000004};
+    int longArraySize = sizeof(longArray) / sizeof(long);
+    for (int i = 0; i < longArraySize; i++) {
+        cout << "longArray[" << i << "] is :" << longArray[i] << endl;
+    }
+
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+
+    // 定义 float 类型的数组
+    float floatArray[3] = {1.23, 2.34, 3.45};
+    int floatArraySize = sizeof(floatArray) / sizeof(float);
+    for (int i = 0; i < floatArraySize; i++) {
+        cout << "floatArray[" << i << "] is :" << floatArray[i] << endl;
+    }
+
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+
+    // 定义 double 类型的数组
+    double doubleArray[3] = {1.001, 1.002, 1.003};
+    cout << doubleArray << endl;
+    cout << &doubleArray[0] << endl;
+    int doubleArraySize = sizeof(doubleArray) / sizeof(double);
+    for (int i = 0; i < doubleArraySize; i++) {
+        cout << "doubleArray[" << i << "] is :" << doubleArray[i] << endl;
+    }
+
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+
+    // 定义 char 类型的数组
+    char charArray[3] = {'A', 'B', 'C'};
+    int charArraySize = sizeof(charArray) / sizeof(char);
+    for (int i = 0; i < charArraySize; i++) {
+        cout << "charArray[" << i << "] is :" << charArray[i] << endl;
+    }
+
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+
+    // 定义 string 类型的数组
+    string stringArray[3] = {"zhangsan", "lisi", "wangwu"};
+    int stringArraySize = sizeof(stringArray) / sizeof(string);
+    for (int i = 0; i < stringArraySize; i++) {
+        cout << "stringArray[" << i << "] is :" << stringArray[i] << endl;
+    }
+
+    return 0;
+}
+

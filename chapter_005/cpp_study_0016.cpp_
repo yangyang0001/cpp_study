@@ -1,0 +1,74 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int i = 0;
+    for( ; ; ) {
+        cout << "i is :" << i << endl;
+        i++;
+        if(i > 30) {
+            break;
+        }
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    int j = 0;
+    for( ; ; j++) {
+        cout << "j is :" << j << endl;
+        if(j >= 30) {
+            break;
+        }
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    int m = 0;
+    do {
+        cout << "m is :" << m << endl;
+        m++;
+    } while(m <= 30);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    int n = 0;
+    while(n <= 30) {
+        cout << "n is :" << n << endl;
+        n++;
+    }
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    double scores[5] = {60.0, 70.0, 80.0, 90.0, 100.0};
+    for(double x : scores) {
+        cout << "x = " << x << endl;
+    }
+
+    // 这种方式不好想象, 直接用 &x
+    for(double &x : scores) {
+        x = x * 0.80;
+    }
+    for(double x : scores) {
+        cout << "x = " << x << endl;
+    }
+
+
+    return 0;
+}
+
+
+
+

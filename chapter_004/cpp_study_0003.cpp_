@@ -1,0 +1,38 @@
+//
+// Created by 杨建伟 on 2021/2/9.
+//
+
+#include <iostream>
+#include <climits>
+#include <string>
+#include <cstring>
+
+using namespace std;
+
+/**
+ * TODO cin.getline() 和 getline() 尽量不要一起使用
+ * @return
+ */
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char charArr[5];
+    string str;
+
+    cout << "before input charArr length is :" << strlen(charArr) << endl;
+    cout << "please enter charArr line :" << endl;
+    cin.getline(charArr, 6);
+    cout << "after  input charArr length is :" << strlen(charArr) << endl;
+    cout << "after  input charArr is :" << charArr << endl;
+
+    cout << "-------------------------------------------------------------------------------------" << endl;
+    cout << "before input str size is :" << str.size() << endl;
+    cout << "please enter another line :" << endl;
+
+    getline(cin, str);
+    cout << "after  input str size is :" << str.size() << endl;
+    cout << "after  input str is :" << str << endl;
+
+    return 0;
+}
+

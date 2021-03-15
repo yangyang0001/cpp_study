@@ -1,0 +1,37 @@
+//
+// Created by 杨建伟 on 2021/3/9.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+using namespace std;
+
+int sum(int arrary[], int arraySize);
+
+// 2
+void igor();
+float tofu(int x);
+double mpg(double x, double y);
+long summation(long array[], long x);
+double doctor(char const array[]);
+
+
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+
+
+
+    return 0;
+}
+
+

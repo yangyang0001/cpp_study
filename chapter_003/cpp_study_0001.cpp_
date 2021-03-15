@@ -1,0 +1,40 @@
+//
+// Created by 杨建伟 on 2021/1/20.
+//
+/**
+ * 认识常量库 climits, 了解 sizeof 方法
+ */
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+    short min_short = SHRT_MIN;
+    short max_short = SHRT_MAX;
+
+    int min_int = INT_MIN;
+    int max_int = INT_MAX;
+
+    long min_long = LONG_MIN;
+    long max_long = LONG_MAX;
+
+    int short_size = sizeof(short);
+    int int_size   = sizeof(int);
+    int long_size  = sizeof(long);
+
+    cout << "min_short is :" << min_short << endl;
+    cout << "max_short is :" << max_short << endl;
+
+    cout << "min_int   is :" << min_int << endl;
+    cout << "max_int   is :" << max_int << endl;
+
+    cout << "min_long  is :" << min_long << endl;
+    cout << "max_long  is :" << max_long << endl;
+
+    cout << "short_size is :" << short_size << endl;
+    cout << "int_size is   :" << int_size << endl;
+    cout << "long_size is  :" << long_size << endl;
+
+    return 0;
+}

@@ -1,0 +1,34 @@
+//
+// Created by 杨建伟 on 2021/2/23.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout.setf(ios_base::boolalpha);
+
+    string aa = "hello";
+    string bb = "hello";
+    string cc = "Hello";
+
+    cout << "aa is :" << aa << " at location is :" << &aa << endl;
+    cout << "bb is :" << bb << " at location is :" << &bb << endl;
+    cout << "cc is :" << cc << " at location is :" << &cc << endl;
+
+    cout << "aa == bb is :" << (aa == bb) << endl;
+    cout << "aa == cc is :" << (aa == cc) << endl;
+
+    return 0;
+}
+
+
+
+

@@ -1,0 +1,34 @@
+//
+// Created by 杨建伟 on 2021/2/4.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    long secondParam;
+    long days;
+    long hours;
+    long minutes;
+    long seconds;
+
+    cout << "please enter the seconds :";
+    cin >> secondParam;
+
+    days = secondParam / (60 * 60 * 24);
+    hours = (secondParam - (days * 60 * 60 * 24)) / (60 * 60);
+    minutes = (secondParam - days * 60 * 60 * 24 - hours * 60 * 60) / 60;
+    seconds = secondParam % 60;
+
+    cout << "days    :" << days << endl;
+    cout << "hours   :" << hours << endl;
+    cout << "minutes :" << minutes << endl;
+    cout << "seconds :" << seconds << endl;
+
+    return 0;
+}
+

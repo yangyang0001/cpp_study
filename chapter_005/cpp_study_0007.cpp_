@@ -1,0 +1,44 @@
+//
+// Created by 杨建伟 on 2021/2/19.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+/**
+ * 倒序算法
+ * @return
+ */
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    string word;
+    cout << "please enter a word:";
+    cin >> word;
+
+    cout << "before reverse word is :" << word << endl;
+
+    char temp;
+    for(int i = 0, j = word.length() - 1; i < j; i++, j--) {
+        temp = word[i];
+        word[i] = word[j];
+        word[j] = temp;
+    }
+
+    cout << "after reverser  word is :" << word << endl;
+
+    char * pWord = new char[word.size()];
+    pWord = &word[0];
+
+    word = strrev(pWord);
+    cout << "strrev() method word is :" << word << endl;
+
+    return 0;
+}
+
+
+
+

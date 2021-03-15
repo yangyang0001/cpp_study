@@ -1,0 +1,88 @@
+//
+// Created by 杨建伟 on 2021/3/5.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+
+using namespace std;
+
+int sum(int arrary[], int arraySize);
+
+int sum_a(int const array[], int arraySize);
+
+int sum_b(const int array[], int arraySize);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int a = 10;
+    const int * pa = &a;
+    // 测试 *pa 能随便赋值吗?   pa 能随便赋值吗?
+
+    cout << "pa   = " << pa << endl;
+    cout << "* pa = " << * pa << endl;
+
+    // *pa += 1; 不能随便赋值, 应为 const int 是常量
+    pa += 1;
+
+    const int b = 20;
+    // int * pb = &b; 不允许
+
+    const int n = 13;
+    int * p1;
+    //const int ** pp2;
+    //    pp2 = &p1; // 不允许
+    //    p1 = &n;   // 不允许
+    //   *pp2 = &n;  // 允许
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    int result = 0;
+    const int array[5] = {1, 2, 4, 8, 16};
+
+//    sum(array, 5); // 编译不通过
+
+    result = sum_a(array, 5);
+    cout << "sum_a invoked result = " << result << endl;
+
+    result = sum_b(array, 5);
+    cout << "sum_b invoked result = " << result << endl;
+
+    return 0;
+}
+
+int sum(int array[], int arraySize) {
+    int result = 0;
+    for(int i = 0; i < arraySize; i++) {
+        result += array[i];
+    }
+    return result;
+}
+
+int sum_a(const int array[], int arraySize) {
+    int result = 0;
+    for(int i = 0; i < arraySize; i++) {
+        result += array[i];
+    }
+    return result;
+}
+
+int sum_b(int const array[], int arraySize) {
+    int result = 0;
+    for(int i = 0; i < arraySize; i++) {
+        result += array[i];
+    }
+    return result;
+}
+
+
+
+

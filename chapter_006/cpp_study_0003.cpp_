@@ -1,0 +1,38 @@
+//
+// Created by 杨建伟 on 2021/2/25.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int fave = 27;
+    int n;
+
+    cout << "please enter the number 1 - 100 :";
+    do {
+        cin >> n;
+        if(n < fave) {
+            cout << "n < fave" << endl;
+        } else if (n > fave) {
+            cout << "n > fave" << endl;
+        } else {
+            cout << "n = fave" << endl;
+        }
+    } while(n != fave);
+
+    return 0;
+}
+
+
+
+

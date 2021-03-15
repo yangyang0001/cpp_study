@@ -1,0 +1,23 @@
+//
+// Created by Ñî½¨Î° on 2021/2/4.
+// 1 Ó¢´ç = 0.083333333333333 Ó¢³ß; 1 Ó¢³ß = 12 Ó¢´ç
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+const double divisor = 12;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    double inches;
+    cout << "please enter inches :";
+    cin >> inches;
+    double feet = inches / divisor;
+    double left = (int) inches % (int) divisor;
+
+    cout << inches << " Ó¢´ç" << " is " << feet << " Ó¢³ß " << left << "Ó¢´ç" << endl;
+    return 0;
+}
+

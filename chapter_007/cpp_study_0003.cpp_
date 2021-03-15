@@ -1,0 +1,49 @@
+//
+// Created by 杨建伟 on 2021/3/4.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+
+using namespace std;
+
+void n_chars(char ch, int num);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char ch;
+    int times;
+
+    cout << "please enter the char ch   :";
+    cin >> ch;
+
+    while(ch != 'q') {
+        cout << "please enter the loop num  :";
+        cin >> times;
+
+        n_chars(ch, times);
+
+        cout << "please enter the q to quit :";
+        cin >> ch;
+    }
+    return 0;
+}
+
+void n_chars(char ch, int num) {
+    while(num-- > 0) {
+        cout << ch;
+    }
+    cout << endl;
+}
+
+
+
+

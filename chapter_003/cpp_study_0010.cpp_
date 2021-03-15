@@ -1,0 +1,32 @@
+//
+// Created by 杨建伟 on 2021/2/3.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield); //fixed-point
+
+    float a = 3;
+    int b = 3.9832;
+    int c = 7.2E12;
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+
+    // 经过验证只有int 类型才能用求模运算
+    int d = 22;
+    int e = 10;
+    cout << "d = " << d << ", e = " << e << endl;
+    cout << "d % e = " << d % e << endl;
+
+    unsigned int ff = 100;
+    cout << "ff = " << ff << endl;
+
+    return 0;
+}
+

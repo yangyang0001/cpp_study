@@ -1,0 +1,119 @@
+//
+// Created by 杨建伟 on 2021/3/12.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+using namespace std;
+
+struct free_throws {
+    string name;
+    int made;
+    int attempts;
+    float percent;
+};
+
+void set_pc(free_throws & ft);
+void display(const free_throws & ft);
+free_throws & accumulate(free_throws & target, const free_throws & source);
+
+// FIXME  这种方式 以后就禁用吧
+//const free_throws & clone2(free_throws & ft) {
+//    cout << "ft location     = " << (int *) &ft << endl;
+//
+//    // 这种做法不可取, 因为 这种做法是在方法内部 开辟一块新的内存, 这块内存在stack中存放, 一旦方法结束则变量收回, 这种可能会引起不必要的麻烦
+//    free_throws newguy = ft;
+//    cout << "newguy location = " << (int *) &newguy << endl;
+//
+//    return newguy;
+//}
+
+// 推荐用法 代替 clone2 方法
+const free_throws & clone(free_throws & ft) {
+    cout << "ft location = " << (int *) &ft << endl;
+
+    free_throws * pt;
+    pt = & ft;
+    cout << "pt loaction = " << (int * ) pt << endl;
+
+    return * pt;
+}
+
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    free_throws one = {"zhangsan", 13, 14};
+    free_throws two = {"lisi", 10, 16};
+    free_throws three = {"wangwu", 7, 9};
+    free_throws four = {"zhaoliu", 5, 9};
+    free_throws five = {"maosan", 6, 14};
+
+    free_throws team;
+
+    set_pc(one);
+    display(one);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    accumulate(team, one);
+    display(team);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    display(accumulate(team, two));
+    accumulate(accumulate(team, three), four);
+    display(team);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    free_throws dup;
+    dup = accumulate(team, five);
+    display(team);
+    display(dup);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    accumulate(dup, five) = four;
+    display(dup);
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+//    clone2(one);
+    cout << "----------------------------------------------------------------------------------" << endl;
+    clone(one);
+
+    return 0;
+}
+
+void set_pc(free_throws & ft) {
+    if(ft.attempts != 0) {
+        ft.percent = 100.0f * float(ft.made) / float (ft.attempts);
+    } else {
+        ft.percent = 0;
+    }
+}
+
+void display(const free_throws & ft) {
+    cout << "name = " << ft.name << ",\t";
+    cout << "made = " << ft.made << ",\t";
+    cout << "attempts = " << ft.attempts << ",\t";
+    cout << "percent  = " << ft.percent << endl;
+}
+
+free_throws & accumulate(free_throws & target, const free_throws & source) {
+    target.name = source.name;
+    target.made = source.made;
+    target.attempts = source.attempts;
+    set_pc(target);
+    return target;
+}
+
+

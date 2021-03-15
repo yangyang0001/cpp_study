@@ -1,0 +1,37 @@
+//
+// Created by 杨建伟 on 2021/2/14.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    double wages[3] = {10000.0, 20000.0, 30000.0};
+    short stacks[3] = {3, 2, 1};
+
+    double * pw = wages;
+    short * ps = &stacks[0];
+
+    // 经验证 数组名称 和第一个元素的地址值 是一样的, 这样数组名称就是第一个元素的指针
+    cout << "&wages[0] is :" << &wages[0] << endl;
+    cout << "wages     is :" << wages << endl;
+    cout << "pw        is :" << pw << endl;
+
+    cout << "sizeof wages :" << sizeof(wages) << endl;
+    cout << "sizeof pw    :" << sizeof(pw) << endl;
+    cout << "* (pw + 1)   :" << * (pw + 1) << endl;
+
+
+
+
+    return 0;
+}
+
+
+
+

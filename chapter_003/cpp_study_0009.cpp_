@@ -1,0 +1,26 @@
+//
+// Created by 杨建伟 on 2021/2/3.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    cout << "9   / 5     = " << (9 / 5) << endl;
+    cout << "9.0 / 5.0   = " << (9.0 / 5.0) << endl;
+    cout << "9L  / 5L    = " << (9L / 5L) << endl;
+    cout << "9.0F / 5.0F = " << (9.0F / 5.0F) << endl;
+
+    // 验证 9.0/5.0   是 double 类型
+    cout << "sizeof 9.0 / 5.0   = " << sizeof(9.0 / 5.0) << endl;
+    // 验证 9.0F/5.0F 是 float 类型
+    cout << "sizeof 9.0F / 5.0F = " << sizeof(9.0F / 5.0F) << endl;
+
+    return 0;
+}
+

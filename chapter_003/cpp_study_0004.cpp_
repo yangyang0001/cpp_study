@@ -1,0 +1,41 @@
+//
+// Created by 杨建伟 on 2021/1/21.
+//
+/**
+ * cout.put('') 这种打印只能打印一个字符, cout('单个字符')
+ */
+#include <iostream>
+#include <climits>
+
+#define PI 3.1415926
+
+using namespace std;
+
+int main() {
+    cout << "-----------------------------------------------------------------------------------------------------------" << endl;
+    char mine_char;
+    cout << "mine_char is :" << mine_char << endl;
+    cout << "enter a character is :";
+    cin >> mine_char;
+    cout << "mine_char is :" << mine_char << endl;
+
+    cout << "-----------------------------------------------------------------------------------------------------------" << endl;
+    int count;
+    cout << "enter count is :";
+    cin >> count;
+    cout << "count is :" << count << endl;
+
+    cout << "----------------------------------------boolean 测试 ------------------------------------------------------" << endl;
+    /**
+     * 经测试 任何非0的都会转化为 true, 任何为0的都会转化为 false
+     */
+    bool firstFlag = -100;
+    bool seconFlag = 0;
+    bool thirdFlag = 100;
+    cout << "firstFlag is :" << firstFlag << endl;
+    cout << "seconFlag is :" << seconFlag << endl;
+    cout << "thirdFlag is :" << thirdFlag << endl;
+
+    return 0;
+}
+

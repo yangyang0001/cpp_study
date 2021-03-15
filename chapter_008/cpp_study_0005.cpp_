@@ -1,0 +1,44 @@
+//
+// Created by 杨建伟 on 2021/3/12.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+
+using namespace std;
+
+struct Person{
+    string username;
+    string password;
+};
+
+void setPerson(Person & person);
+
+void display(const Person & person);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Person person;
+    setPerson(person);
+    display(person);
+
+    return 0;
+}
+
+void setPerson(Person & person) {
+    person.username = "zhangsan";
+    person.password = "123456";
+}
+
+void display(const Person & person) {
+    cout << "person.username = " << person.username << endl;
+    cout << "person.password = " << person.password << endl;
+}
+

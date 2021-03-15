@@ -1,0 +1,33 @@
+//
+// Created by 杨建伟 on 2021/2/23.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+/**
+ * TODO typedef 定义别名格式如下: typedef typeName aliasName
+ */
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    float first = 10.0;
+    float secod = 20.0;
+
+    typedef float * MINE_TYPE;
+    MINE_TYPE pFirst = &first;
+    MINE_TYPE pSecod = &secod;
+
+    cout << "first = " << first << " at location is :" << pFirst << endl;
+    cout << "secod = " << secod << " at location is :" << pSecod << endl;
+
+}
+
+
+
+

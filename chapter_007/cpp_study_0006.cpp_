@@ -1,0 +1,58 @@
+//
+// Created by 杨建伟 on 2021/3/4.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+
+using namespace std;
+
+int fill_array(double array[], int arraySize);
+
+void show_array(double array[], int showSize);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    const int arraySize = 8;
+    double * array = new double[arraySize];
+    int count = fill_array(array, arraySize);
+    cout << "count = " << count << endl;
+
+    cout << endl << "----------------------------------------------------------------------------------" << endl;
+
+    show_array(array, count);
+
+    delete[] array;
+    return 0;
+}
+
+int fill_array(double array[], int arraySize) {
+    int count = 0;
+    for(int i = 0; i < arraySize; i++) {
+        cout << "please enter the " << (i+1) << " value :";
+        if(cin >> array[i]) {
+            count ++;
+        } else {
+            break;
+        }
+    }
+    return count;
+}
+
+void show_array(double array[], int showSize) {
+    for(int i = 0;i < showSize; i++) {
+        cout << "array[" << i << "] = " << array[i] << endl;
+    }
+}
+
+
+
+

@@ -1,0 +1,40 @@
+//
+// Created by 杨建伟 on 2021/2/17.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+struct Person {
+    string name;
+    int age;
+    bool gender;
+};
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    Person person = {"yangjianwei", 20, 1};
+
+    Person * pPerson = new Person;
+    pPerson = &person;
+
+    cout << "person.name   is :" << person.name << endl;
+    cout << "person.age    is :" << person.age << endl;
+    cout << "person.gender is :" << person.gender << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    cout << "pPerson->name   is :" << pPerson->name << endl;
+    cout << "pPerson->age    is :" << pPerson->age << endl;
+    cout << "pPerson->gender is :" << pPerson->gender << endl;
+
+    delete pPerson;
+    return 0;
+}
+
+
+
+

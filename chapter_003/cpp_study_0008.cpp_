@@ -1,0 +1,66 @@
+//
+// Created by 杨建伟 on 2021/2/3.
+//
+
+
+/**
+ * 认识一下 float 和 double 精度问题
+ */
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    float a;
+    cout << "please enter float a:";
+    cin >> a;
+
+    float b;
+    cout << "please enter float b:";
+    cin >> b;
+
+    double c;
+    cout << "please enter double c:";
+    cin >> c;
+
+    double d;
+    cout << "please enter double d:";
+    cin >> d;
+
+    cout << "\n---------------------------------------------------------------------------------------------" << endl;
+
+    cout << "a + b = " << (a + b) << endl;
+    cout << "a - b = " << (a - b) << endl;
+    cout << "a * b = " << (a * b) << endl;
+    cout << "a / b = " << (a / b) << endl;
+
+    cout << "---------------------------------------------------------------------------------------------" << endl;
+
+    cout << "c + d = " << (c + d) << endl;
+    cout << "c - d = " << (c - d) << endl;
+    cout << "c * d = " << (c * d) << endl;
+    cout << "c / d = " << (c / d) << endl;
+
+    cout << "---------------------------------------------------------------------------------------------" << endl;
+
+    cout << "sizeof float  = " << sizeof(float) << endl;
+    cout << "sizeof double = " << sizeof(double) << endl;
+
+    cout << "---------------------------------------------------------------------------------------------" << endl;
+
+    // TODO 测试精度问题, 位数太长的话就用 double来进行 计算
+    float e = 1.25E22F;
+    float f = 1.25E22F + 1.0F;
+
+    cout << "e = " << e << endl;
+    cout << "f = " << f << endl;
+    cout << "f - e = " << (f - e) << endl;
+
+    cout << "---------------------------------------------------------------------------------------------" << endl;
+
+    return 0;
+}

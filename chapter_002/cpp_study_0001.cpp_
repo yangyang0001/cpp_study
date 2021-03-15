@@ -1,0 +1,16 @@
+#include <iostream>
+
+/**
+ * 学习第一个程序: return 0; 可以省略,但只适用于 main() 函数
+ * using 是编译指令的意思, << 是发送给谁的意思
+ * @return
+ */
+int main() {
+
+    using namespace std;
+
+    cout << "Hello World" << endl;
+    cout << "Yang " << "Study C++" << endl;
+
+    return 0;
+}

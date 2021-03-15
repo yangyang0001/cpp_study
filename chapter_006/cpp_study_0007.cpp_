@@ -1,0 +1,45 @@
+//
+// Created by 杨建伟 on 2021/2/25.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+bool is_int(double num) {
+    if(num > INT_MIN && num < INT_MAX) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    long double num;
+    cout << "please enter the num :";
+    cin >> num;
+    cout << "num  = " << num << endl;
+
+    while (!is_int(num)) {
+        cout << endl << "enter num again :";
+        cin >> num;
+        cout << "num  = " << num << endl;
+    }
+
+    int last_num = (int) num;
+    cout << "the integer number = " << last_num << endl;
+
+    return 0;
+}
+
+
+
+

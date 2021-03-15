@@ -1,0 +1,26 @@
+//
+// Created by 杨建伟 on 2021/1/14.
+//
+
+#include <iostream>
+
+void simon(int count) {
+    using namespace std;
+    cout << "simon invoked count is " << count << endl;
+}
+
+int main() {
+
+    using namespace std;
+
+    int count = 200;
+
+    simon(count);
+
+    count++;
+
+    simon(count);
+
+    return 0;
+}
+

@@ -1,0 +1,25 @@
+//
+// Created by 杨建伟 on 2021/1/14.
+//
+#include <iostream>
+using namespace std;
+
+void simon(int count) {
+    cout << "I have " << count << " books" << endl;
+}
+
+int main() {
+
+    int count = 100;
+
+    simon(count);
+
+    count++;
+
+    simon(count);
+
+    return 0;
+}
+
+
+

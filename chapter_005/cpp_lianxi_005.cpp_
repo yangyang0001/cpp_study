@@ -1,0 +1,33 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 5-i ; j > 0; j--) {
+            cout << ".";
+        }
+        for(int k = 1; k <= i; k++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+

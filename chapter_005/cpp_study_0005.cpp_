@@ -1,0 +1,41 @@
+//
+// Created by 杨建伟 on 2021/2/19.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int a = 20;
+    int b = 20;
+    cout << "a   = " << a <<   ", b   = " << b << endl;
+    cout << "a++ = " << a++ << ", b++ = " << b++ << endl;
+    cout << "a   = " << a <<   ", b   = " << b << endl;
+
+    int c = 20;
+    int d = 20;
+    cout << "c   = " << c <<   ", d   = " << d << endl;
+    cout << "++c = " << ++c << ", ++d = " << ++d << endl;
+    cout << "c   = " << c <<   ", d   = " << d << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    double arr[5] = {21.1, 32.8, 23.4, 45.2, 37.4};
+
+    double * pt = arr;  // the pointer to 21.1
+    ++pt;               // the pointer to 32.8
+
+    cout << "* ++pt = " << * ++pt << endl; // the pointer to 23.4
+    cout << "++ *pt = " << ++ *pt << endl; // the pointer to 23.4, then the value is 24.4
+
+    return 0;
+}
+
+
+
+

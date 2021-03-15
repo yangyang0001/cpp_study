@@ -1,0 +1,46 @@
+//
+// Created by 杨建伟 on 2021/3/9.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int aa = 10;
+    int & other = aa;
+
+    cout << "aa     = " << aa << endl;
+    cout << "other  = " << other << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    cout << "&other = " << &other << endl;
+    cout << "&aa    = " << &aa << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    other += 1;
+    cout << "aa     = " << aa << endl;
+    cout << "other  = " << other << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    // 数组变量引用, 这种不能进行 变量的引用操作, 目前编译不通过, 至于为什么? 我也不知道
+    array<int, 4> first = {1, 2, 3, 4};
+    vector<int> v(4);
+
+    return 0;
+}
+
+

@@ -1,0 +1,23 @@
+//
+// Created by 杨建伟 on 2021/2/9.
+//
+#include <iostream>
+#include <climits>
+#include <string>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    string aa;
+    string bb;
+
+    cout << "please enter aa :";
+    cin >> aa;
+    cout << "please enter bb :";
+    cin >> bb;
+
+    cout << aa + bb << endl;
+
+    return 0;
+}

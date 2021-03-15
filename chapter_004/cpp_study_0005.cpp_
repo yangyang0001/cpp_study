@@ -1,0 +1,29 @@
+//
+// Created by 杨建伟 on 2021/2/9.
+//
+#include <iostream>
+#include <climits>
+#include <string>
+#include <cstring>
+
+using namespace std;
+
+/**
+ * 共用体不能使用string
+ */
+union Union {
+    char username[100];
+    int age;
+
+};
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Union aa;
+
+
+
+    return 0;
+}

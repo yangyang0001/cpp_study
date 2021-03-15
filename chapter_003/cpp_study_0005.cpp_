@@ -1,0 +1,38 @@
+//
+// Created by 杨建伟 on 2021/1/21.
+//
+
+/**
+ * const 常量限定符, 代替 #define 的做法
+ * 定义格式:
+ * const type name = value; 分号一定不能少
+ *
+ * 科学计数法 aEb : a,b可为正可为负
+ */
+#include <iostream>
+#include <climits>
+
+const double PI = 3.1415926;
+using namespace std;
+
+int main() {
+    // 强制输出为小数点格式 cout.setf(ios_base::fixed, ios_base::floatfiled)
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout << "PI is " << PI << endl;
+
+    double aa = 2.52E+8;
+    double bb = 8.33E-4;
+    double cc1 = 7E5;
+    double cc2 = 7E+5;
+    double cc3 = 7E-5;
+    double dd = -18.32E13;
+    double ee = 1.69E12;
+    double ff = 5.98E24;
+    double gg = 9.11E-31;
+
+    cout << "cc1 is :" << cc1 << endl;
+    cout << "cc2 is :" << cc2 << endl;
+    cout << "cc3 is :" << cc3 << endl;
+
+    return 0;
+}

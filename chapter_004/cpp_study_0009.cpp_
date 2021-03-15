@@ -1,0 +1,46 @@
+//
+// Created by 杨建伟 on 2021/2/13.
+//
+/**
+ * new 只能针对指针 并且和块区域分配在 heap 区 或 free store 区, 直接 定义的变量在stack中存放
+ */
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int nights = 1001;
+    int * pt = new int;
+    * pt  = 1001;
+
+    double * pd = new double;
+    * pd = 100001.0;
+
+    cout << "nights is :" << nights << endl;
+    cout << "nights location is :" << &nights << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    cout << "* pt is :" << * pt << endl;
+    cout << "pt is   :" << pt << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    cout << "pt       is:" << pt << endl;
+    cout << "pt size  is:" << sizeof(pt)<< endl;
+    cout << "*pt size is:" << sizeof(* pt)<< endl;
+    cout << "pd       is:" << pd << endl;
+    cout << "pd size  is:" << sizeof(pd)<< endl;
+    cout << "*pd size is:" << sizeof(* pd)<< endl;
+
+
+    return 0;
+}
+

@@ -1,0 +1,22 @@
+//
+// Created by 杨建伟 on 2021/1/28.
+//
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    double a = 2.34E10F;
+    double b = 1.0f;
+    double c = a + b;
+
+    cout << "a is :" << a << endl;
+    cout << "b is :" << b << endl;
+    cout << "c is :" << c << endl;
+
+    return 0;
+}

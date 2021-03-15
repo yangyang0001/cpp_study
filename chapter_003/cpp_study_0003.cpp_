@@ -1,0 +1,60 @@
+//
+// Created by 杨建伟 on 2021/1/21.
+//
+/**
+ * cout 插入输出运算符 只能打印10进制的数值
+ */
+#include <iostream>
+#include <climits>
+#define ZERO 0
+#define PI 3.1415926
+
+using namespace std;
+
+int main() {
+
+    cout << "ZERO is :" << ZERO << endl;
+
+    int int_08_bit = 042;   // 表示08进制
+    int int_10_bit = 100;   // 表示10进制
+    int int_16_bit = 0x42;  // 表示16进制
+
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+    cout << "int_08_bit is :" << int_08_bit << endl;
+    cout << "int_10_bit is :" << int_10_bit << endl;
+    cout << "int_16_bit is :" << int_16_bit << endl;
+
+    // cout 打印不同进制的 数值
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+    int count = 100;
+    cout << hex << "100_16_bit is :" << count << endl;
+    cout << dec << "100_10_bit is :" << count << endl;
+    cout << oct << "100_08_bit is :" << count << endl;
+
+    // 在64位系统中, 常量类型占用 4个字节
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+    cout << "ZERO size is  :" << sizeof (ZERO) << endl;
+    cout << "PI   size is  :" << sizeof (PI) << endl;
+
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+    cout << "unsigned short size is     :" << sizeof (unsigned short) << endl;
+    cout << "short size is              :" << sizeof (short) << endl;
+    cout << "unsigned int size is       :" << sizeof (unsigned int) << endl;
+    cout << "int size is                :" << sizeof (int) << endl;
+    cout << "unsigned long size is      :" << sizeof (unsigned long) << endl;
+    cout << "long size is               :" << sizeof (long) << endl;
+    cout << "unsigned long long size is :" << sizeof (unsigned long long) << endl;
+    cout << "long long size is          :" << sizeof (long long) << endl;
+
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+    cout << "float  size is             :" << sizeof (float) << endl;
+    cout << "double size is             :" << sizeof (double) << endl;
+    cout << "long double size is        :" << sizeof (long double) << endl;
+
+    cout << "-------------------------------------------------------------------------------------------------" << endl;
+    char char_mine = 'c';
+    cout << "char size is               :" << sizeof (char) << endl;
+    cout << "char_mine size is          :" << sizeof (char_mine) << ", char_mine is :" << char_mine <<endl;
+
+    return 0;
+}

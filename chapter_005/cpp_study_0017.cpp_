@@ -1,0 +1,36 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+
+/**
+ * 程序存在不足, 忽略 空格, cin >> 替换为 cin.get(char ) 类型进行补救
+ */
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    char ch;
+    int count = 0;
+    cout << "please enter characters, enter # to quit:\n";
+    cin >> ch;
+    while(ch != '#') {
+        cout << ch;
+        count ++;
+        cin >> ch;
+    }
+
+    cout << endl << "count = " << count << endl;
+    return 0;
+}
+
+
+
+

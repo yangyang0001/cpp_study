@@ -1,0 +1,28 @@
+//
+// Created by 杨建伟 on 2021/2/17.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    vector<int> vi(2);
+    vi[0] = 100;
+    vi[1] = 200;
+
+    for(int i = 0; i < vi.capacity(); i++) {
+        cout << "vi.at(" << i << ") = " << vi.at(i) << endl;
+    }
+
+    return 0;
+}
+
+
+
+

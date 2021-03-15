@@ -1,0 +1,41 @@
+//
+// Created by 杨建伟 on 2021/3/5.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+
+
+using namespace std;
+
+const int arraySize = 8;
+int sum_arr(int * begin, int * end);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int array[arraySize] = {1, 2, 4, 8, 16, 32, 64, 128};
+    int sum = sum_arr(array, array + 3);
+
+    cout << "sum = " << sum << endl;
+    return 0;
+}
+
+int sum_arr(int * begin, int * end) {
+    int result = 0;
+    for (int * i = begin; i <= end; i++) {
+        cout << "i = " << i << ", * i = " << (* i) << endl;
+        result += (*i);
+    }
+    return result;
+}
+
+
+
+

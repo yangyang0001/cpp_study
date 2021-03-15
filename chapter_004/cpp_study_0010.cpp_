@@ -1,0 +1,52 @@
+//
+// Created by 杨建伟 on 2021/2/14.
+//
+/**
+ * 经验证 delete语句后 的语句默认不执行, 因此 delete 和 delete[] 后不允许有任何业务代码块
+ */
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int night  = 1001;
+    int * nLocation = new int;
+    nLocation = &night;
+
+    cout << "night       is :" << night << endl;
+    cout << "&night      is :" << &night << endl;
+    cout << "nLocation   is :" << nLocation << endl;
+    cout << "* nLocation is :" << * nLocation << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    int nights[3] = {10, 30, 50};
+    int * nsLocation = new int[3];
+    nsLocation = nights;
+
+    cout << "nights     is :" << nights << endl;
+    cout << "&nights[0] is :" << &nights[0] << endl;
+    cout << "nights[0]  is :" << nights[0] << endl;
+    cout << "* nights   is :" << * nights << endl;
+
+    int intArraySize = sizeof(nights) / sizeof(int);
+    for (int i = 0; i < intArraySize; i++) {
+        cout << "nsLocation[" << i << "] is :" << nsLocation[i] << endl;
+    }
+
+    cout << "delete process start-----------------------------------------------------------------------" << endl;
+    delete nLocation;
+    delete[] nsLocation;
+    cout << "delete process end  -----------------------------------------------------------------------" << endl;
+
+    return 0;
+}
+
+
+
+

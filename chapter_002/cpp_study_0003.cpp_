@@ -1,0 +1,21 @@
+//
+// Created by 杨建伟 on 2021/1/8.
+//
+
+#include <iostream>
+
+int main () {
+
+    using namespace std;
+
+    int count;
+
+    cin >> count;
+
+    count = count + 2;
+
+    cout << "I have " << count << " books.";
+
+    return 0;
+}
+

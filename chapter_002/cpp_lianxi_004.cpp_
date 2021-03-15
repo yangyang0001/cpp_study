@@ -1,0 +1,21 @@
+//
+// Created by 杨建伟 on 2021/1/18.
+//
+
+#include <iostream>
+
+using namespace std;
+
+int getMonthsByAge(int age) {
+    return age * 12;
+}
+
+int main() {
+    int age = 0;
+    cout << "please enter your age :";
+    cin >> age;
+    int months = getMonthsByAge(age);
+    cout << "months is " << months << endl;
+    return 0;
+}
+

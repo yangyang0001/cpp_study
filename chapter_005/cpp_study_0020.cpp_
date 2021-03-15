@@ -1,0 +1,71 @@
+//
+// Created by 杨建伟 on 2021/2/24.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <ctime>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int maxtemps[4][5] = {
+        {10, 20, 30, 40, 50},
+        {11, 21, 31, 41, 51},
+        {12, 22, 32, 42, 52},
+        {13, 23, 33, 43, 53}
+    };
+
+    for(int i = 0; i < 4; i++) {
+        for(int j = 0; j < 5; j++) {
+            cout << maxtemps[i][j] << "\t";
+        }
+        cout << endl;
+    }
+
+    cout << "typeof(int) = " << sizeof(int) << endl;
+    cout << "maxtemps    = " << maxtemps    << endl;
+    cout << "maxtemps[0] = " << maxtemps[0] << endl;
+    cout << "maxtemps[1] = " << maxtemps[1] << endl;
+    cout << "maxtemps[2] = " << maxtemps[2] << endl;
+    cout << "maxtemps[3] = " << maxtemps[3] << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    char * citys[5] = {
+        "BeiJing",
+        "ShangHai",
+        "TianJing",
+        "ChongQing",
+        "QingDao"
+    };
+
+    int temps[4][5] = {
+        {10, 20, 30, 40, 50},
+        {11, 21, 31, 41, 51},
+        {12, 22, 32, 42, 52},
+        {13, 23, 33, 43, 53}
+    };
+
+
+    for(int j = 0; j < 5; j++) {
+        cout << citys[j] << ":\t";
+        for(int i = 0; i < 4; i++) {
+            cout << temps[i][j] << "\t";
+        }
+        cout << endl;
+    }
+
+
+
+    return 0;
+}
+
+
+
+

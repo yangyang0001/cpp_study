@@ -1,0 +1,33 @@
+//
+// Created by 杨建伟 on 2021/2/25.
+//
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int a, b, c;
+    cout << "please enter a :";
+    cin >> a;
+    cout << "please enter b :";
+    cin >> b;
+
+    c = a > b ? a : b;
+    cout << "a = " << a << ", b = " << b << ", the bigger is " << c << endl;
+
+    return 0;
+}
+
+
+
+
