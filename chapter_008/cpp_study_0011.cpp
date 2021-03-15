@@ -15,14 +15,14 @@
 
 using namespace std;
 
-char * left(const char * str, int n);
+char * left(const char * str, int n = 1);
 
 int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
 
     const char * str = "HelloWorld";
     cout << "outer str = " << str << " at location = " << (int *) str << endl;
-    char * arr = left(str, 20);
+    char * arr = left(str, 100);
     cout << "outer arr = " << arr << " at location = " << (int *) arr << endl;
 
     delete[] arr;
