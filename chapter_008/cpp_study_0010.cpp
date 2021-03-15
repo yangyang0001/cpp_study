@@ -39,7 +39,13 @@ int main() {
     return 0;
 }
 
-
+/**
+ * TODO 继承在函数中的使用, 这块使用 父类引用 指向 子类实例
+ * @param os
+ * @param percent
+ * @param array
+ * @param arraySize
+ */
 void file_it(ostream & os, double percent, const double array[], int arraySize) {
     os.setf(ios_base::fixed, ios_base::floatfield);
     os.setf(ios_base::showpoint);
