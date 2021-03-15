@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-D:/CLionProjects/cpp_study/chapter_006_io/cpp_study_0002.cpp
+D:/CLionProjects/cpp_study/chapter_008/cpp_study_0010.cpp
 iostream
 -
 climits
@@ -26,5 +26,7 @@ cctype
 cmath
 -
 fstream
+-
+cstdlib
 -
 
