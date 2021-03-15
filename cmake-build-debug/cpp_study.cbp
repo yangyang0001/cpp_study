@@ -344,7 +344,10 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_006/cpp_study_0013.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_006_io/cpp_study_0001.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_006_io/cpp_study_0001.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_006_io/cpp_study_0002.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_007/cpp_lianxi_001.cpp_">

@@ -18,9 +18,17 @@ using namespace std;
 int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
 
+    ifstream inFile;
+    inFile.open("D:\\CLionProjects\\cpp_study\\chapter_006_io\\first.txt");
 
-
-
+    char line[1024];
+    if(inFile.is_open()) {
+        while(inFile.good()) {
+            inFile.getline(line, 1024);
+            cout << line << endl;
+        }
+        inFile.close();
+    }
 
     return 0;
 }

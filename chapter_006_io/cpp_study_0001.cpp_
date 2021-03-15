@@ -11,11 +11,21 @@
 # include <ctime>
 # include <cctype>
 # include <cmath>
+# include <fstream>
 
 using namespace std;
 
 int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    ofstream outFile;
+    outFile.open("D:\\CLionProjects\\cpp_study\\chapter_006_io\\first.txt");
+
+    if(outFile.is_open()) {
+        outFile << "This is the first file;" << endl;
+        outFile << "Hello World ofstream;" << endl;
+        outFile.close();
+    }
 
     return 0;
 }
