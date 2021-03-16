@@ -1,0 +1,81 @@
+//
+// Created by 杨建伟 on 2021/3/16.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+const double PI = 3.1415926;
+
+void file_it(ostream & os, const double arr[], int arraySize);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    const double arr[5] = {2, 4, 6, 8, 10};
+    file_it(cout, arr, 5);
+
+    ofstream outFile;
+    outFile.open("D:\\CLionProjects\\cpp_study\\chapter_008\\cpp_study_0012_Extend.txt");
+    if(outFile.is_open()) {
+        file_it(outFile, arr, 5);
+        outFile.flush();
+        outFile.close();
+    }
+
+    return 0;
+}
+
+void file_it(ostream & os, const double arr[], int arraySize) {
+    os.setf(ios_base::fixed, ios_base::floatfield);
+    os.precision(2);
+
+    os.width(10);
+    os << "     ";
+    os.width(15);
+    os << "diameter";
+    os.width(15);
+    os << "acreage" << endl;
+
+    double sumD = 0;
+    double sumA = 0;
+
+    for (int i = 0; i < arraySize; i++) {
+        os.width(10);
+        os << "     ";
+        os.width(15);
+        os << arr[i];
+        os.width(15);
+        os << PI * pow(arr[i]/2, 2) << endl;
+
+        sumD += arr[i];
+        sumA += PI * pow(arr[i]/2, 2);
+    }
+
+    os << "-------------------------------------------------------------------------------------------------------------" << endl;
+
+    os.width(10);
+    os << "sum = ";
+    os.width(15);
+    os << sumD;
+    os.width(15);
+    os << sumA << endl;
+
+    os.width(10);
+    os << "avg = ";
+    os.width(15);
+    os << sumD / arraySize;
+    os.width(15);
+    os << sumA / arraySize << endl;
+}
+
+
