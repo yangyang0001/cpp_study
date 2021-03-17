@@ -116,8 +116,13 @@ string对象就像 处理基本数据类型是一样的, 这里提出了string�
 
 函数重载的重要特征就是参数列表, 这种特征又称为函数特征标或函数签名(function signature), 对于函数重载 函数特征标对于 类型变量和类型引用, 编译器视为一种情况!
 
+函数泛型或函数模板的使用格式如下: 就和平时定义函数的方式一样, 只是在头部加上一个 template<typename T> 或 template<class T>
+    typename 和 class 都是关键字不可修改, 二者区别:   typename : 只能用于类对象 或 结构体, class    : 可以支持任何类型
+    举例:
+        template<typename T>
+        void swap_type(T & a, T & b);
 
-
-
+        template<class T>
+        void swap_clazz(T & a, T & b);
 
 

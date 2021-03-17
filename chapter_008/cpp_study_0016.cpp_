@@ -1,0 +1,42 @@
+//
+// Created by 杨建伟 on 2021/3/17.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+struct Person {
+    string username;
+    string password;
+};
+
+template <typename T>
+void show(T & obj);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Person person = {"zhangsan", "123456"};
+    show(person);
+
+    return 0;
+}
+
+template <typename T>
+void show(T & obj) {
+    Person person = obj;
+    cout << "person.username = " << person.username << endl;
+    cout << "person.password = " << person.password << endl;
+}
+
+

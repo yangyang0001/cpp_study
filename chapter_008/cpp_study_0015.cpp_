@@ -1,0 +1,66 @@
+//
+// Created by 杨建伟 on 2021/3/17.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+// 函数原型
+template<typename T>
+void swap_type(T & a, T & b);
+
+template<class N>
+void swap_clazz(N & a, N & b);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int a = 10, b = 100;
+    cout << "swap_clazz before a = " << a << ", b = " << b << endl;
+    swap_clazz(a, b);
+    cout << "swap_clazz after  a = " << a << ", b = " << b << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    string str1 = "Hello", str2 = "World";
+    cout << "swap_type before str1 = " << str1 << ", str2 = " << str2 << endl;
+    swap(str1, str2);
+    cout << "swap_type after  str1 = " << str1 << ", str2 = " << str2 << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    cout << "swap_clazz before str1 = " << str1 << ", str2 = " << str2 << endl;
+    swap_clazz(str1, str2);
+    cout << "swap_clazz after  str1 = " << str1 << ", str2 = " << str2 << endl;
+
+    return 0;
+}
+
+// typename 函数实现
+template <typename T>
+void swap_type(T & a, T & b) {
+    T temp = a;
+    a = b;
+    b = temp;
+}
+
+// class 模板函数实现
+template<class N>
+void swap_clazz(N & a, N & b) {
+    N temp = a;
+    a = b;
+    b = temp;
+}
+
+
+
