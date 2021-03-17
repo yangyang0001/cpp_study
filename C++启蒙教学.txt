@@ -112,10 +112,22 @@ string对象就像 处理基本数据类型是一样的, 这里提出了string�
 
 应用变量对于继承的使用, 举例: ofstream ifstream ostream 的使用
 
-默认参数: 必须从右开始,类似于java中的多个参数占用同一位置的简写方式
+默认参数:
+    必须从右开始,类似于java中的多个参数占用同一位置的简写方式
 
-函数重载的重要特征就是参数列表, 这种特征又称为函数特征标或函数签名(function signature), 对于函数重载 函数特征标对于 类型变量和类型引用, 编译器视为一种情况!
+函数重载:
+    函数重载的重要特征就是参数列表, 这种特征又称为函数特征标或函数签名(function signature), 对于函数重载 函数特征标对于 类型变量和类型引用, 编译器视为一种情况!
 
-函数泛型或函数模板的使用格式如下: 就和平时定义函数的方式一样, 只是在头部加上一个 template<typename T> 或 template<class T>, 未来使用 typename 关键字
+函数模板:
+    函数泛型或函数模板的使用格式如下: 就和平时定义函数的方式一样, 只是在头部加上一个 template<typename T> 或 template<class T>, 未来使用 typename 关键字,
+    如果以后自己编写禁用 class
 
+    函数模板重载的调用优先级: nothing template > concrete template > generic template
+
+    具体化模板和显示实例化的最大差距就是 具体化模板template <> , 而显示实例化没有 <> 只有 template
+
+    具体格式如下:
+    template <typename T> void function(T & a); // 泛化模板方法
+    template <> void function<int>(int & a);    // 具体化模板方法
+    template function<int>(int & a);            // 模板方法实例化
 
