@@ -1,0 +1,98 @@
+//
+// Created by 杨建伟 on 2021/3/16.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+/**
+ * 函数重载的问题
+ * 注意: 类型变量和类型引用 编译器视为一种 function signature, 函数特征标识一定要唯一
+ * @return
+ */
+
+void print(const char * str, int width);
+void print(double d, int width);
+void print(long l,int width);
+void print(int i, int width);
+void print(const char * str);
+
+void sink(double & r1);
+void sink(const double & r2);
+void sink(double && r3);
+
+void staff(double & rs);
+void staff(const double & rs);
+void stove(double & r1);
+void stove(const double & r2);
+void stove(double && r3);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+//    unsigned int year = 5;
+//    print(year, 5);
+
+    double r1 = 12;
+    sink(r1);
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    const double r2 = 13;
+    sink(r2);
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    double a = 14;
+    double & b = a;
+    cout << "a   = " << a << " at location = " << (int *) &a << endl;
+    cout << "b   = " << b << " at location = " << (int *) &b << endl;
+    sink((double &&) b);
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    double x = 55.0;
+    const double y = 32.0;
+    cout << "x   = " << x << " at location = " << (int *) &x << endl;
+    cout << "y   = " << y << " at location = " << (int *) &y << endl;
+    stove(x);
+    stove(y);
+    stove(x+y);
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    return 0;
+}
+
+void sink(double & r1) {
+    cout << "r1 = " << r1 << " at location = " << (int *) &r1 << endl;
+}
+
+void sink(const double & r2) {
+    cout << "r2 = " << r2 << " at location = " << (int *) &r2 << endl;
+}
+
+void sink(double && r3) {
+    cout << "r3  = " << r3  << " at location = " << (int *) &r3 << endl;
+}
+
+void stove(double & r1) {
+    cout << "stove r1  = " << r1  << " at location = " << (int *) &r1 << endl;
+}
+
+void stove(const double & r2) {
+    cout << "stove r2  = " << r2  << " at location = " << (int *) &r2 << endl;
+}
+
+void stove(double && r3) {
+    cout << "stove r3  = " << r3  << " at location = " << (int *) &r3 << endl;
+}
+
+
+

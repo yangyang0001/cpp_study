@@ -425,7 +425,10 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0012.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0013.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0013.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0014.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/CMakeLists.txt">
