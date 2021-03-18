@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cpp_study.dir/chapter_008/cpp_lianxi_001.cpp.obj"
   "CMakeFiles/cpp_study.dir/chapter_008/cpp_study_0018.cpp.obj"
   "cpp_study.exe"
   "cpp_study.exe.manifest"

@@ -142,6 +142,33 @@ cpp_study/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/build
 .PHONY : cpp_study/fast
 
+chapter_008/cpp_lianxi_001.obj: chapter_008/cpp_lianxi_001.cpp.obj
+
+.PHONY : chapter_008/cpp_lianxi_001.obj
+
+# target to build an object file
+chapter_008/cpp_lianxi_001.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_008/cpp_lianxi_001.cpp.obj
+.PHONY : chapter_008/cpp_lianxi_001.cpp.obj
+
+chapter_008/cpp_lianxi_001.i: chapter_008/cpp_lianxi_001.cpp.i
+
+.PHONY : chapter_008/cpp_lianxi_001.i
+
+# target to preprocess a source file
+chapter_008/cpp_lianxi_001.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_008/cpp_lianxi_001.cpp.i
+.PHONY : chapter_008/cpp_lianxi_001.cpp.i
+
+chapter_008/cpp_lianxi_001.s: chapter_008/cpp_lianxi_001.cpp.s
+
+.PHONY : chapter_008/cpp_lianxi_001.s
+
+# target to generate assembly for a file
+chapter_008/cpp_lianxi_001.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_008/cpp_lianxi_001.cpp.s
+.PHONY : chapter_008/cpp_lianxi_001.cpp.s
+
 chapter_008/cpp_study_0018.obj: chapter_008/cpp_study_0018.cpp.obj
 
 .PHONY : chapter_008/cpp_study_0018.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cpp_study
+	@echo ... chapter_008/cpp_lianxi_001.obj
+	@echo ... chapter_008/cpp_lianxi_001.i
+	@echo ... chapter_008/cpp_lianxi_001.s
 	@echo ... chapter_008/cpp_study_0018.obj
 	@echo ... chapter_008/cpp_study_0018.i
 	@echo ... chapter_008/cpp_study_0018.s
