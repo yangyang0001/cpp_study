@@ -26,4 +26,11 @@ struct person {
 };
 
 void show_person(person & p);
+
+void show_person(person & p) {
+    cout << "person.username = " << p.username << endl;
+    cout << "person.password = " << p.password << endl;
+    cout << "person.gender   = " << p.gender << endl;
+    cout << "person.age      = " << p.age << endl;
+}
 #endif //CPP_STUDY_CPP_STUDY_0001_H

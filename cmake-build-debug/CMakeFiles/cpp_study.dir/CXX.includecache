@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
-D:/CLionProjects/cpp_study/chapter_008/cpp_lianxi_001.cpp
+D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.cpp
+iostream
+-
+climits
+-
+string
+-
+cstring
+-
+vector
+-
+array
+-
+ctime
+-
+cctype
+-
+cmath
+-
+fstream
+-
+cpp_study_0001.h
+D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.h
+
+D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.h
 iostream
 -
 climits
