@@ -1,3 +1,1 @@
-"D:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cpp_study.dir/objects.a
-"D:\Program Files\MinGW\bin\ar.exe" cr CMakeFiles\cpp_study.dir/objects.a @CMakeFiles\cpp_study.dir\objects1.rsp
-"D:\Program Files\MinGW\bin\g++.exe" -g   -Wl,--whole-archive CMakeFiles\cpp_study.dir/objects.a -Wl,--no-whole-archive  -o cpp_study.exe -Wl,--out-implib,libcpp_study.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cpp_study.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0002.cpp.o  -o cpp_study 
