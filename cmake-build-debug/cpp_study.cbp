@@ -389,7 +389,7 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_007/cpp_study_0012.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_lianxi_001.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_lianxi_001.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0001.cpp_">
@@ -443,7 +443,13 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0017.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0018.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0018.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.cpp">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.h">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/CMakeLists.txt">

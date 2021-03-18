@@ -1,0 +1,101 @@
+//
+// Created by 杨建伟 on 2021/3/18.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+// 第3题答案
+template <typename T> void show_param(T a);
+
+// 第4题答案
+struct box {
+    char maker[40];
+    float length;
+    float width;
+    float height;
+    float volume;
+};
+// 泛化模板
+template <typename T> void access(T & a, bool show_flag);
+// 具体化模板函数
+template <> void access<box>(box & j, bool show_flag);
+
+// 第6题答案
+double mass(double density, double volume = 1.0);
+void repeat(int repeat = 5, const char * str = "But you are kind of stupid");
+template <typename T> T average(T & a, T & b);
+
+// 第7题答案
+template <typename T> T my_max(T & a, T & b);
+
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    // 1、哪些函数适合内联函数?
+    /**
+     * 答案: 因为内联函数不是寻找函数地址进行调用, 而是直接把这块函数 替代 调用它的地方,
+     *      1、因此函数必须要短, 尤其是运行时间短
+     *      2、代码量也尽量短, 一般是一些工具类
+     */
+
+    // 2、函数原型: void song(const char * name, int times);
+    /**
+     * 答案:
+     *      a、如何修改原型, 始times的默认值为1?
+     *      void song(const char * name, int times = 1);
+     *      b、能否为name提供默认值 为 Yang
+     *      能, void song(const char * name = "Yang", int times = 1);
+     */
+
+    // 3、写一个重载函数, 这个重载函数 支持 int, double, char类型, iquote
+    show_param(1);
+    show_param(100);
+    show_param("zhangsan");
+
+    cout << "==================================================================================" << endl;
+
+    // 4、模板方法的使用
+    box my_box = {"zhangsan", 2, 3, 4, 0};
+    access(my_box, true);
+    access(my_box, false);
+    access(my_box, true);
+
+    // 5、原始函数不去翻了 引用变量使用 & 就完了
+
+    // 6、
+
+
+    return 0;
+}
+
+template <typename T> void show_param(T a) {
+    cout << "a = " << a << endl;
+}
+
+// 具体化模板函数
+template <> void access<box>(box & j, bool show_flag) {
+    if(show_flag) {
+        cout << "box.maker  = " << j.maker << endl;
+        cout << "box.length = " << j.length << endl;
+        cout << "box.width  = " << j.width << endl;
+        cout << "box.height = " << j.height << endl;
+        cout << "box.volume = " << j.volume << endl;
+        cout << "----------------------------------------------------------------------------------" << endl;
+    } else {
+        j.volume = j.length * j.width * j.height;
+    }
+}
+
+

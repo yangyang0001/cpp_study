@@ -15,10 +15,15 @@
 
 using namespace std;
 
-int main() {
-    cout.setf(ios_base::fixed, ios_base::floatfield);
+#ifndef CPP_STUDY_CPP_STUDY_0001_H
+#define CPP_STUDY_CPP_STUDY_0001_H
 
-    return 0;
-}
+struct person {
+    string username;
+    string password;
+    int gender;
+    int age;
+};
 
-
+void show_person(person & p);
+#endif //CPP_STUDY_CPP_STUDY_0001_H

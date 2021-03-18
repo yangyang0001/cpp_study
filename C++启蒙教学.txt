@@ -128,6 +128,28 @@ string对象就像 处理基本数据类型是一样的, 这里提出了string�
 
     具体格式如下:
     template <typename T> void function(T & a); // 泛化模板方法
-    template <> void function<int>(int & a);    // 具体化模板方法
+    template <> void function<int>(int & a);    // 具体化模板方法 [具体化模板 必须依赖于 泛化模板]
     template function<int>(int & a);            // 模板方法实例化
+
+---------------------------------------------------------- 第9章 C++内存模型名称空间 -------------------------------------------------
+头文件的引入:
+    同一个头文件只能在一个文件中引入一次, 这是C, C++的规范! 防止出现错误的情况, 引入了一下的定义 #if not define , #define , #endif
+    #ifndef [if not define]  #define  #endif 来防止 多次引入统一个头文件, 引入头文件用 "", 因为 "" 扫描的范围先从源代码中 再从默认的工具库中获取
+
+    举例: (省略号为结构体的声明, 方法声明, 内联函数等, 一些定义相关的内容)
+    #ifndef ABC
+    #define ABC
+        .....
+        .....
+        .....
+    #endif
+
+
+
+
+
+
+
+
+
 
