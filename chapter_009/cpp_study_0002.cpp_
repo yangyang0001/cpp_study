@@ -14,26 +14,45 @@
 # include <fstream>
 
 using namespace std;
-
+/**
+ * C++中自动存储变量有以下两种:
+ *  1、方法中的形参和变量
+ *  2、寄存器变量
+ * @param x
+ */
 void oil(int x);
 
 int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
     int texas = 31;
     int year = 2011;
+
+    cout << "sizeof int       = " << sizeof(int) << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
     cout << "In main() texas  = " << texas << " at location = " << & texas << endl;
     cout << "In main() year   = " << year  << " at location = " << & year  << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
 
     oil(texas);
 
+    cout << "----------------------------------------------------------------------------------" << endl;
+
     cout << "In main() texas  = " << texas << " at location = " << & texas << endl;
     cout << "In main() year   = " << year  << " at location = " << & year  << endl;
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    oil(123);
 
     return 0;
 }
 
 void oil(int x) {
     int texas = 5;
+    cout << "In oil() cout at = " << & cout << endl;
     cout << "In oil() x       = " << x      << " at location = " << & x      << endl;
     cout << "In oil() texas   = " << texas  << " at location = " << & texas  << endl;
     {
@@ -55,5 +74,9 @@ Post block texas = 5 at location = 0x7ffeec82aa28
 In main() texas  = 31 at location = 0x7ffeec82aa68
 In main() year   = 2011 at location = 0x7ffeec82aa64
  */
+
+
+
+
 
 
