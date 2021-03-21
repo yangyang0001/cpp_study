@@ -1,0 +1,39 @@
+//
+// Created by 杨建伟 on 2021/3/21.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+/**
+ * 外部连接性的 静态变量的声明方式 有以下四种:
+ * 有无extern 修饰      有无初始化
+ *      0                 0             // 定义
+ *      0                 1             // 定义
+ *      1                 0             // 声明
+ *      1                 1             // 定义
+ */
+
+using namespace std;
+
+double up;                  // 定义
+extern int blem;            // 声明
+extern char gr = 'z';       // 定义
+
+int enough  = 2 * sizeof(long) + 1; // 定义
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    return 0;
+}
+
+
