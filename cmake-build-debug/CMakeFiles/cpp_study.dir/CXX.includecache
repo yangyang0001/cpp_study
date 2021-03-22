@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-D:/CLionProjects/cpp_study/chapter_009/cpp_study_0007_01.cpp
+/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0009.cpp
 iostream
 -
 climits
@@ -22,31 +22,5 @@ array
 ctime
 -
 cctype
--
-cmath
--
-fstream
--
-
-D:/CLionProjects/cpp_study/chapter_009/cpp_study_0007_02.cpp
-iostream
--
-climits
--
-string
--
-cstring
--
-vector
--
-array
--
-ctime
--
-cctype
--
-cmath
--
-fstream
 -
 

@@ -27,6 +27,12 @@ int main() {
     where * one = new where {2.5, 5.3, 7.2};
     int * ar = new int[2] {100, 102};
 
+    // 2、new 和 delete 的使用方式
+    void * operator new(size_t);
+    void * operator new[](size_t);
+    void operator delete(void *);
+    void operator delete[](void *);
+
     return 0;
 }
 
