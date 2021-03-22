@@ -196,6 +196,33 @@ chapter_009/cpp_study_0007_02.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0007_02.cpp.s
 .PHONY : chapter_009/cpp_study_0007_02.cpp.s
 
+chapter_009/cpp_study_0008.obj: chapter_009/cpp_study_0008.cpp.obj
+
+.PHONY : chapter_009/cpp_study_0008.obj
+
+# target to build an object file
+chapter_009/cpp_study_0008.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0008.cpp.obj
+.PHONY : chapter_009/cpp_study_0008.cpp.obj
+
+chapter_009/cpp_study_0008.i: chapter_009/cpp_study_0008.cpp.i
+
+.PHONY : chapter_009/cpp_study_0008.i
+
+# target to preprocess a source file
+chapter_009/cpp_study_0008.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0008.cpp.i
+.PHONY : chapter_009/cpp_study_0008.cpp.i
+
+chapter_009/cpp_study_0008.s: chapter_009/cpp_study_0008.cpp.s
+
+.PHONY : chapter_009/cpp_study_0008.s
+
+# target to generate assembly for a file
+chapter_009/cpp_study_0008.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0008.cpp.s
+.PHONY : chapter_009/cpp_study_0008.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -211,6 +238,9 @@ help:
 	@echo ... chapter_009/cpp_study_0007_02.obj
 	@echo ... chapter_009/cpp_study_0007_02.i
 	@echo ... chapter_009/cpp_study_0007_02.s
+	@echo ... chapter_009/cpp_study_0008.obj
+	@echo ... chapter_009/cpp_study_0008.i
+	@echo ... chapter_009/cpp_study_0008.s
 .PHONY : help
 
 
