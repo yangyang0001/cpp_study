@@ -143,32 +143,32 @@ cpp_study/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/build
 .PHONY : cpp_study/fast
 
-chapter_009/cpp_study_0009.o: chapter_009/cpp_study_0009.cpp.o
+chapter_009/cpp_study_0010.o: chapter_009/cpp_study_0010.cpp.o
 
-.PHONY : chapter_009/cpp_study_0009.o
+.PHONY : chapter_009/cpp_study_0010.o
 
 # target to build an object file
-chapter_009/cpp_study_0009.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0009.cpp.o
-.PHONY : chapter_009/cpp_study_0009.cpp.o
+chapter_009/cpp_study_0010.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0010.cpp.o
+.PHONY : chapter_009/cpp_study_0010.cpp.o
 
-chapter_009/cpp_study_0009.i: chapter_009/cpp_study_0009.cpp.i
+chapter_009/cpp_study_0010.i: chapter_009/cpp_study_0010.cpp.i
 
-.PHONY : chapter_009/cpp_study_0009.i
+.PHONY : chapter_009/cpp_study_0010.i
 
 # target to preprocess a source file
-chapter_009/cpp_study_0009.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0009.cpp.i
-.PHONY : chapter_009/cpp_study_0009.cpp.i
+chapter_009/cpp_study_0010.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0010.cpp.i
+.PHONY : chapter_009/cpp_study_0010.cpp.i
 
-chapter_009/cpp_study_0009.s: chapter_009/cpp_study_0009.cpp.s
+chapter_009/cpp_study_0010.s: chapter_009/cpp_study_0010.cpp.s
 
-.PHONY : chapter_009/cpp_study_0009.s
+.PHONY : chapter_009/cpp_study_0010.s
 
 # target to generate assembly for a file
-chapter_009/cpp_study_0009.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0009.cpp.s
-.PHONY : chapter_009/cpp_study_0009.cpp.s
+chapter_009/cpp_study_0010.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_009/cpp_study_0010.cpp.s
+.PHONY : chapter_009/cpp_study_0010.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_study"
-	@echo "... chapter_009/cpp_study_0009.o"
-	@echo "... chapter_009/cpp_study_0009.i"
-	@echo "... chapter_009/cpp_study_0009.s"
+	@echo "... chapter_009/cpp_study_0010.o"
+	@echo "... chapter_009/cpp_study_0010.i"
+	@echo "... chapter_009/cpp_study_0010.s"
 .PHONY : help
 
 

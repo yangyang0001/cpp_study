@@ -477,7 +477,10 @@
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0008.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0009.cpp">
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0009.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0010.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/CMakeLists.txt">
