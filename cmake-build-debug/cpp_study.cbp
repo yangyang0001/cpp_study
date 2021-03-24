@@ -446,6 +446,9 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0018.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_lianxi_001.cpp">
+			<Option target="cpp_study"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
@@ -488,7 +491,7 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01_namespace.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01_namespace.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01_namespace.h">
