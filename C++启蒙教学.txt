@@ -179,6 +179,14 @@ C++编译器使用三块内存来存储变量的存储:
     常规new函数 是在heap中开辟内存空间的, 举例: double * pi = new double[4];
     定义new函数 是在指定的地方使用内存的, 举例: double * pi = new (指针或地址) double[4];
 
+    // 常规new函数或常规new运算符 和 定义new函数或定义new运算符
+    double * abc = new int;             // invoke new int(sizeof(int));
+    double * abc = new int[4];          // invoke new int(4 * sizeof(int));
+    double * abc = new (buffer) int;    // invoke new (buffer, sizeof(int));
+    double * abc = new (buffer) int[4]; // invoke new (buffer, 4 * sizeof(int));
+
+命名空间: namespace 自定义和使用方式
+
 
 
 
