@@ -56,6 +56,9 @@ void Stock:: update(double price) {
 }
 
 void Stock:: show() {
+    cout.setf(ios_base:: fixed, ios_base:: floatfield);
+    cout.precision(3);
+
     cout << "company     = " << company << endl;
     cout << "shares      = " << shares << endl;
     cout << "share_value = " << share_value << endl;
