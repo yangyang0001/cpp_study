@@ -483,12 +483,6 @@
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0010.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01.cpp">
-			<Option target="cpp_study"/>
-		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01.h">
-			<Option target="cpp_study"/>
-		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
