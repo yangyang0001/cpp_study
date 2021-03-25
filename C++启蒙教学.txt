@@ -131,6 +131,8 @@ string对象就像 处理基本数据类型是一样的, 这里提出了string�
     template <> void function<int>(int & a);    // 具体化模板方法 [具体化模板 必须依赖于 泛化模板]
     template function<int>(int & a);            // 模板方法实例化
 
+    具体化模板方法 和 模板方法显示实例化 在同一处是互斥的? 为什么互斥?
+
 ---------------------------------------------------------- 第9章 C++内存模型名称空间 -------------------------------------------------
 头文件的引入:
     同一个头文件只能在一个文件中引入一次, 这是C, C++的规范! 防止出现错误的情况, 引入了一下的定义 #if not define , #define , #endif
@@ -192,7 +194,48 @@ C++编译器使用三块内存来存储变量的存储:
 
 面向过程编程 和 面向对象编程
     面向过程编程 抽象性并没有那么高, 主要是通过 function 的使用来进行的, C就是面向过程的变成语言, 这种主要编写大量的方法来实现 主要的功能!
-    面向对象编程
+    面向对象编程 涉及数据类型并使用数据类型的过程, 抽象出合理的数据类型是非常中要的一个过程!
+
+类的定义模式:
+    class ClazzName {
+        private : ....;
+        public  : ....;
+    };
+
+    // FIXME 在class内部定义的函数将作为 内链函数进行转换, 这块是C++内部的自动转换! 举例以下两者是相同的含义:
+    class Stock {
+        private : string name;
+        private : string pass;
+        private : int gender;
+        private : int age;
+
+        // class 内部定义的 function, 将自动转换为 内链函数!
+        private : void set_name (string n) {
+            name = n;
+        }
+    }
+
+    // FIXME 以上的class声明中 定义的set_name 方法等同于 以下 代码块:
+    class Stock {
+        private : string name;
+        private : string pass;
+        private : int gender;
+        private : int age;
+
+        private : void set_name (string n);
+    }
+
+    inline void Stock set_name (string n) {
+        name = n;
+    }
+
+    // TODO 总结: class内部定义的方法, 等同于用声明方法去替代, 然后在类的后面定义这个方法且声明为内链方法!
+    // TODO 函数成员的使用, 谁调用类的方法, 方法内部的成员就是谁的, 这和java是一致的!
+
+
+
+
+
 
 
 

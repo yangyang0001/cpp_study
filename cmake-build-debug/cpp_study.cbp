@@ -446,7 +446,7 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_study_0018.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_lianxi_001.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_lianxi_001.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0001.cpp_">
@@ -488,13 +488,25 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0010.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01_namespace.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_009/cpp_study_0011_01_namespace.h">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_010/cpp_study_0001.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_010/cpp_study_0001_stock.cpp">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_010/cpp_study_0001_stock.h">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_010/cpp_study_0002.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/CMakeLists.txt">
