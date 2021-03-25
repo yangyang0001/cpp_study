@@ -65,7 +65,7 @@ int main() {
     delete pd1;
     // delete pd2;             // TODO 这行代码有问题, 因为 pd2 在 buffer 中开辟的内存, 不属于堆中的内存; process not work, 注释掉就OK了
     pd1 = new double[N];
-    pd2 = new (buffer + N * sizeof(double)) double[N];
+    pd2 = new (buffer + N) double[N];       // TODO 此处书本错了, 这里是 指针算术, 应该改为 new (buffer + N) double[N]; 如果按照书中, 则为偏移量 320
 //    pd2 = new (buffer) double[N];
 
     for(int i = 0; i < N; i++) {
@@ -73,9 +73,9 @@ int main() {
     }
 
     cout << "the third time memory :" << endl;
-    cout << "N * sizeof(double)  = " << 5 * sizeof(double) << endl;
-    cout << "static address buffer  = " << buffer << " at location = " << (void *) buffer << endl;
-    cout << "static address buffer + N * sizeof(double)  = " << buffer << " at location = " << (void *) (buffer + N * sizeof(double)) << endl;
+    cout << "N * sizeof(double)         = " << 5 * sizeof(double) << endl;
+    cout << "static address buffer      = " << buffer << endl;
+    cout << "static address buffer + N  = " << buffer << " at location = " << (void *) (buffer + N) << endl;
     for(int i = 0; i < N; i++) {
         cout << "pd1[" << i << "] = " << pd1[i] << " at location = " << &pd1[i] << endl;
     }
@@ -89,23 +89,4 @@ int main() {
 
     return 0;
 }
-
-/**
- * pd4[0] = 1000.000000 at location = 0x10ad900e0   16
- * pd4[0] = 1000.000000 at location = 0x10ad900f0   16
- *
- * pd4[0] = 1000.000000 at location = 0x10ad90100   16 * 16
- * pd4[0] = 1000.000000 at location = 0x10ad90110
- * pd4[0] = 1000.000000 at location = 0x10ad901.0
- * pd4[0] = 1000.000000 at location = 0x10ad901.0
- * pd4[0] = 1000.000000 at location = 0x10ad901.0
- * pd4[0] = 1000.000000 at location = 0x10ad901f0
- *
- * pd4[0] = 1000.000000 at location = 0x10ad90200   16
- * pd4[0] = 1000.000000 at location = 0x10ad90210   16
- * pd2[0] = 1000.000000 at location = 0x10ad90220
- *
- * 0x10b95b0f0 = 4489326832
- * 0x10b95b230 = 4489327152
- */
 
