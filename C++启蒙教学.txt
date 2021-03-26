@@ -226,7 +226,7 @@ C++编译器使用三块内存来存储变量的存储:
         private : void set_name (string n);
     }
 
-    inline void Stock set_name (string n) {
+    inline void Stock::set_name (string n) {
         name = n;
     }
 
@@ -234,6 +234,10 @@ C++编译器使用三块内存来存储变量的存储:
     // TODO 函数成员的使用, 谁调用类的方法, 方法内部的成员就是谁的, 这和java是一致的!
 
     类的定义, 实例化 以及使用的过程参考 cpp_study_0002.cpp就OK了!
+    类的声明和定义     声明基本(不是所有)用 :    定义基本用 ::, 这是C++区别有别的语言的规则!
+
+构造函数 和 析构函数
+
 
 
 
