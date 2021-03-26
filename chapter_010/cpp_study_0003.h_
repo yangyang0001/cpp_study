@@ -32,9 +32,12 @@ class Person {
 
 
     // 构造方法 无论是 有参构造函数 还是 无参构造函数, 都必须实现 否则运行时 编译报错!
-    public: Person() {}
+    public: Person() {
+        cout << "Person() none param constructor method invoked !" << endl;
+    }
 
     public: Person(string param_name, string param_pass) {
+        cout << "Person(string, string) param constructor method invoked!" << endl;
         name = param_name;
         pass = param_pass;
     }

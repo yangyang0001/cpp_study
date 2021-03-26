@@ -1,0 +1,63 @@
+//
+// Created by 杨建伟 on 2021/3/26.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+#ifndef CPP_STUDY_CPP_STUDY_0004_H
+#define CPP_STUDY_CPP_STUDY_0004_H
+
+class Stock {
+    private: string company;
+    private: long shares;
+    private: double share_value;
+    private: double total_value;
+
+    private: void set_total() {
+        total_value = shares * share_value;
+    }
+
+    public: void set_company(string m_company);
+    public: void set_shares(long m_shares);
+    public: void set_share_value(double m_share_value);
+
+    public: Stock() {
+        cout << "none param constructor invoked!" << endl;
+        company = "NULL";
+        shares = 0;
+        share_value = 0;
+        set_total();
+    }
+
+    public: Stock(const string & m_company, long m_shares, double m_share_value) {
+        cout << "have param constructor invoked!" << endl;
+        company = m_company;
+        if(m_shares < 0) {
+            cout << "have param constructor invoked the param m_shares < 0" << endl;
+            shares = 0;
+        } else {
+            shares = m_shares;
+        }
+        if(m_share_value < 0) {
+            share_value = 0;
+        } else {
+            share_value = m_share_value;
+        }
+        set_total();
+    }
+
+    public: void show();
+};
+
+#endif //CPP_STUDY_CPP_STUDY_0004_H

@@ -1,0 +1,44 @@
+//
+// Created by 杨建伟 on 2021/3/26.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0004.h_"
+
+using namespace std;
+
+int main() {
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    Stock * stock0 = new Stock("NetFlix", 100, 20.0);
+    stock0->show();
+
+    // 这里思考一下 java 中的构造函数, 是用new 进行构造的时候, 这个时候返回一个 实例对象, 这个对象在 heap 或 free_store 中分配! C++ 返回的也是类似于这种的 指针类型!
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    Stock * stock1 = new Stock();
+    stock1->set_company("BellLabs");
+    stock1->set_shares(1200);
+    stock1->set_share_value(1000.5);
+    stock1->show();
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+//    Stock stock2("Cabbage", 250, 1.25); // 等价于以下方法
+//    stock2.show();
+    Stock * stock2 = new Stock("Cabbage", 250, 1.25);
+    stock2->show();
+
+    return 0;
+}
+
+
