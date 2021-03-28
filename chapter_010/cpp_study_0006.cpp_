@@ -12,11 +12,19 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
+# include "cpp_study_0006.h_"
+
 
 using namespace std;
 
 int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
+
+//    Stock * stock = new Stock("DeepGroup", 10, 200.5);
+//    stock->mine_show();
+//    delete stock;
+
+    Stock stock1 = Stock("DeepBlue", 20, 100.5);
 
     return 0;
 }

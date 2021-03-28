@@ -24,10 +24,6 @@ class Stock {
     double share_value;
     double total_value;
 
-    void set_total() {
-        total_value = shares * share_value;
-    }
-
     // 无参构造函数
     public: Stock() {
         cout << "none param constructor invoked !" << endl;
@@ -53,6 +49,19 @@ class Stock {
         }
         set_total();
     }
+
+    // 私有函数
+    void set_total() {
+        total_value = shares * share_value;
+    }
+
+    // 共有函数
+    public: void set_company(const string m_company);
+    public: void set_shares(long m_shares);
+    public: void set_share_value(double m_share_value);
+    public: void mine_show();
+
+    // 析构函数原型 ~ Stock();
 
     // 析构函数
     ~ Stock(){

@@ -142,32 +142,59 @@ cpp_study/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/build
 .PHONY : cpp_study/fast
 
-chapter_010/cpp_study_0006.obj: chapter_010/cpp_study_0006.cpp.obj
+chapter_010/cpp_study_0007.obj: chapter_010/cpp_study_0007.cpp.obj
 
-.PHONY : chapter_010/cpp_study_0006.obj
+.PHONY : chapter_010/cpp_study_0007.obj
 
 # target to build an object file
-chapter_010/cpp_study_0006.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0006.cpp.obj
-.PHONY : chapter_010/cpp_study_0006.cpp.obj
+chapter_010/cpp_study_0007.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0007.cpp.obj
+.PHONY : chapter_010/cpp_study_0007.cpp.obj
 
-chapter_010/cpp_study_0006.i: chapter_010/cpp_study_0006.cpp.i
+chapter_010/cpp_study_0007.i: chapter_010/cpp_study_0007.cpp.i
 
-.PHONY : chapter_010/cpp_study_0006.i
+.PHONY : chapter_010/cpp_study_0007.i
 
 # target to preprocess a source file
-chapter_010/cpp_study_0006.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0006.cpp.i
-.PHONY : chapter_010/cpp_study_0006.cpp.i
+chapter_010/cpp_study_0007.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0007.cpp.i
+.PHONY : chapter_010/cpp_study_0007.cpp.i
 
-chapter_010/cpp_study_0006.s: chapter_010/cpp_study_0006.cpp.s
+chapter_010/cpp_study_0007.s: chapter_010/cpp_study_0007.cpp.s
 
-.PHONY : chapter_010/cpp_study_0006.s
+.PHONY : chapter_010/cpp_study_0007.s
 
 # target to generate assembly for a file
-chapter_010/cpp_study_0006.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0006.cpp.s
-.PHONY : chapter_010/cpp_study_0006.cpp.s
+chapter_010/cpp_study_0007.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0007.cpp.s
+.PHONY : chapter_010/cpp_study_0007.cpp.s
+
+chapter_010/cpp_study_0007_impl.obj: chapter_010/cpp_study_0007_impl.cpp.obj
+
+.PHONY : chapter_010/cpp_study_0007_impl.obj
+
+# target to build an object file
+chapter_010/cpp_study_0007_impl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0007_impl.cpp.obj
+.PHONY : chapter_010/cpp_study_0007_impl.cpp.obj
+
+chapter_010/cpp_study_0007_impl.i: chapter_010/cpp_study_0007_impl.cpp.i
+
+.PHONY : chapter_010/cpp_study_0007_impl.i
+
+# target to preprocess a source file
+chapter_010/cpp_study_0007_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0007_impl.cpp.i
+.PHONY : chapter_010/cpp_study_0007_impl.cpp.i
+
+chapter_010/cpp_study_0007_impl.s: chapter_010/cpp_study_0007_impl.cpp.s
+
+.PHONY : chapter_010/cpp_study_0007_impl.s
+
+# target to generate assembly for a file
+chapter_010/cpp_study_0007_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0007_impl.cpp.s
+.PHONY : chapter_010/cpp_study_0007_impl.cpp.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cpp_study
-	@echo ... chapter_010/cpp_study_0006.obj
-	@echo ... chapter_010/cpp_study_0006.i
-	@echo ... chapter_010/cpp_study_0006.s
+	@echo ... chapter_010/cpp_study_0007.obj
+	@echo ... chapter_010/cpp_study_0007.i
+	@echo ... chapter_010/cpp_study_0007.s
+	@echo ... chapter_010/cpp_study_0007_impl.obj
+	@echo ... chapter_010/cpp_study_0007_impl.i
+	@echo ... chapter_010/cpp_study_0007_impl.s
 .PHONY : help
 
 

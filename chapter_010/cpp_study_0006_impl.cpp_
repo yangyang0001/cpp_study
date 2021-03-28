@@ -1,0 +1,44 @@
+//
+// Created by 杨建伟 on 2021/3/28.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0006.h_"
+
+using namespace std;
+
+void Stock::set_company(const string m_company) {
+    cout << "set_company() invoked m_company = " << m_company << endl;
+    company = m_company;
+}
+
+void Stock::set_shares(long m_shares) {
+    cout << "set_shares() invoked m_shares = " << m_shares << endl;
+    shares = m_shares;
+}
+
+void Stock::set_share_value(double m_share_value) {
+    cout << "set_share_value() invoked m_share_value = " << m_share_value << endl;
+    m_share_value = m_share_value;
+}
+
+void Stock::mine_show() {
+    cout << "mine_show() invoked start .........." << endl;
+    cout << "company     = " << company     << endl;
+    cout << "shares      = " << shares      << endl;
+    cout << "share_value = " << share_value << endl;
+    cout << "total_value = " << total_value << endl;
+    cout << "mine_show() invoked end   .........." << endl;
+}
+
+
+
