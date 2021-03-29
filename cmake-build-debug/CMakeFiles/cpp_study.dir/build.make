@@ -76,32 +76,47 @@ include CMakeFiles/cpp_study.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp_study.dir/flags.make
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.obj: ../chapter_010/cpp_study_0009.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.obj"
-	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0009.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_study_0009.cpp
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.obj: ../chapter_010/cpp_study_0010.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.obj"
+	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0010.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_study_0010.cpp
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.i"
-	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_study_0009.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0009.cpp.i
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.i"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_study_0010.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0010.cpp.i
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.s"
-	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_study_0009.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0009.cpp.s
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.s"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_study_0010.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0010.cpp.s
+
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.obj: ../chapter_010/cpp_study_0010_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.obj"
+	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0010_impl.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_study_0010_impl.cpp
+
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.i"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_study_0010_impl.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0010_impl.cpp.i
+
+CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.s"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_study_0010_impl.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0010_impl.cpp.s
 
 # Object files for target cpp_study
 cpp_study_OBJECTS = \
-"CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.obj"
+"CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.obj" \
+"CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.obj"
 
 # External object files for target cpp_study
 cpp_study_EXTERNAL_OBJECTS =
 
-cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0009.cpp.obj
+cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010.cpp.obj
+cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0010_impl.cpp.obj
 cpp_study.exe: CMakeFiles/cpp_study.dir/build.make
 cpp_study.exe: CMakeFiles/cpp_study.dir/linklibs.rsp
 cpp_study.exe: CMakeFiles/cpp_study.dir/objects1.rsp
 cpp_study.exe: CMakeFiles/cpp_study.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cpp_study.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp_study.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cpp_study.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

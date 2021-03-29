@@ -1,0 +1,88 @@
+//
+// Created by 杨建伟 on 2021/3/29.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0009.h_"
+
+using namespace std;
+
+// 构造函数 定义
+Stock:: Stock() {
+    company = "DeepBlueGroup";
+    shares = 0;
+    share_value = 0;
+    set_total();
+}
+
+Stock:: Stock(const string & m_company, long m_shares, double m_share_value) {
+    if(m_shares < 0) {
+        m_shares = 0;
+    }
+    if(m_share_value < 0) {
+        m_share_value = 0;
+    }
+
+    company = m_company;
+    shares = m_shares;
+    share_value = m_share_value;
+    set_total();
+}
+
+// 析构函数 定义
+Stock:: ~Stock() {
+    cout << "~Stock() invoked, the company = " << company << endl;
+}
+
+// 共有函数成员 定义
+void Stock:: set_company(const string & m_company) {
+    company = m_company;
+}
+
+void Stock:: set_shares(long m_shares) {
+    shares = m_shares;
+}
+
+void Stock:: set_share_value(double m_share_value) {
+    share_value = m_share_value;
+}
+
+void Stock:: show() const {
+    cout << "company = " << company << ", shares = " << shares << ", share_value = " << share_value << ", total_value = "  << total_value << endl;
+}
+
+double Stock:: total() const {
+    return total_value;
+}
+
+// this 指针的使用, 返回股票总价格搞的一只 股票
+Stock & Stock:: get_higher_stock(Stock & stock_A, Stock & stock_B) {
+    return stock_A.total_value >= stock_B.total_value ? stock_A : stock_B;
+}
+
+// 这里this 为指针, 因此这里隐藏了如下的代码
+const Stock & Stock:: get_higher_stock(const Stock & target) const {
+    if(target.total_value >= total_value) {
+        return target;
+    } else {
+        return * this;
+    }
+}
+
+// error: 'this' is unavailable for static member functions
+//void Stock:: static_show() {
+//    cout << "company = " << this.company;
+//}
+
+
+
+

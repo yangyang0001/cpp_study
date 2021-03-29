@@ -1,0 +1,80 @@
+//
+// Created by 杨建伟 on 2021/3/29.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0010.h"
+
+using namespace std;
+
+Stock:: Stock() {
+    this->company = "DeepBlueGroup";
+    this->shares = 0;
+    this->share_value = 0;
+    set_total();
+}
+
+Stock:: Stock(const string & m_company, long m_shares, double m_share_value) {
+    this->company = m_company;
+    this->shares = m_shares > 0 ? m_shares : 0;
+    this->share_value = m_share_value > 0 ? m_share_value : 0;
+    set_total();
+}
+
+// 析构函数 声明
+Stock:: ~ Stock() {
+    cout << "~Stock() invoked, this.company = " << this->company << endl;
+}
+
+// 共有成员函数 声明
+void Stock:: set_company(const string & m_company) {
+    this->company = m_company;
+}
+
+void Stock:: set_shares(long m_shares) {
+    this->shares = m_shares;
+}
+
+void Stock:: set_share_value(double m_share_value) {
+    this->share_value = m_share_value;
+}
+
+void Stock:: show() const {
+    cout << "company = " << company << ", shares = " << shares << ", share_value = " << share_value << ", total_value = "  << total_value << endl;
+}
+
+// this 指针相关 新添加的方法
+double Stock:: total() const {
+    return this->total_value;
+}
+
+// 比较两只股票的 谁的股价 更高 function
+const Stock & Stock:: get_stock_higher(const Stock & target) const {
+    if(target.total_value > this->total_value) {
+        return target;
+    } else {
+        return * this;
+    }
+}
+
+
+

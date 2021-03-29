@@ -1,0 +1,38 @@
+//
+// Created by 杨建伟 on 2021/3/29.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0009.h_"
+# include "cpp_study_0009.h_"
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Stock stock1 = Stock("DeepBlue01", 1000, 10);
+    Stock stock2 = Stock("DeepBlue02", 90, 20);
+
+
+    Stock & result = stock1.get_higher_stock(stock1, stock2);
+    result.show();
+
+    cout << "------------------------------------------------------------------------------------------------------" << endl;
+
+    result = stock1.get_higher_stock(stock2);
+    result.show();
+
+    return 0;
+}
+
+
