@@ -271,7 +271,9 @@ C、this指针
        static void mine_show(); 这类函数是没有 this指针的
     2、静态成员函数中没有 this指针, 如果使用则会 error: 'this' is unavailable for static member functions, 再声明一遍 this 是指针!
 
+D、对象数组, 这块创建数组的方式和基本类型创建数组的方式是一样的, 这也符合设计类当初的理念, 将OOP对象设计为和基本类型一样简单的使用方式!
 
+E、类的作用域, 参考java
 
 
 
