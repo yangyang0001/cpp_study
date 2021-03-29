@@ -1,0 +1,64 @@
+//
+// Created by 杨建伟 on 2021/3/29.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0008.h"
+
+using namespace std;
+
+Stock:: Stock() {
+    company = "DeepBlueGroup";
+    shares = 0;
+    share_value = 0;
+    set_total();
+}
+
+Stock:: Stock(const string m_company, long m_shares, double m_share_value) {
+    if(m_shares < 0) {
+        m_shares = 0;
+    }
+    if(m_share_value < 0) {
+        m_share_value = 0;
+    }
+
+    company = m_company;
+    shares = m_shares;
+    share_value = m_share_value;
+    set_total();
+}
+
+Stock:: ~ Stock() {
+    cout << "~ Stock() invoked, the company = " << company << endl;
+}
+
+void Stock::show() const {
+    cout << "0008_H company = " << company << ", shares = " << shares << ", share_value = " << share_value << ", total_value = " << total_value << endl;
+}
+
+void Stock:: set_company(const string m_company) {
+    company = m_company;
+}
+
+void Stock:: set_shares(long m_shares) {
+    shares = m_shares;
+}
+
+void Stock:: set_share_value(double m_share_value) {
+    share_value = m_share_value;
+}
+
+
+
+
+
+

@@ -12,7 +12,7 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
-# include "cpp_study_0007.h"
+# include "cpp_study_0007.h_"
 
 using namespace std;
 
@@ -35,6 +35,7 @@ int main() {
     cout << "3------------------------------------------------------------------------------------------------------" << endl;
 
     cout << "Using a constructor to reset an object here:" << endl;
+    // 开发中这种方式, 编译器认为已经存在 stock1 对象, 然后创建一个 temp object 然后赋值给 stock1, 这块一旦执行完成就会调用 析构函数 回收这块 临时对象!
     stock1 = Stock("Nifty Foods", 10, 50.0);    // 这种方式一定会产生 temp objects 创建临时对象, 然后赋值给指定的对象!
     cout << "Revised stock1 :" << endl;
     stock1.show();
