@@ -49,7 +49,7 @@ int main() {
 
     cout << "------------------------------------------------------------------------------------------------------" << endl;
 
-    // 最后回收 静态变量, 存储在 静态存储区
+    // 最后回收 静态变量, 存储在 静态存储区, 如果存在多个局部静态类便令, 也符合类似自动变量的 出栈顺序!
     static Stock stock_s = Stock("stock_static", 10000, 10000);
 
     // FIXME heap区 或 free store 中的回收, 必须主动调用 delete 才能触发 析构函数的调用, 一旦delete就立刻触发, 所以 在C, C++中释放内存非常重要, 否则内存会满
@@ -101,9 +101,9 @@ int main() {
      *      ~ Stock() invoked, the company = DeepBlueGroup1      // stock1
      *      ~ Stock() invoked, the company = stock_static        // 静态变量最后回收
      *
+     *  TODO 经验证 析构函数对 自动存储变量, 静态存储变量, 临时开辟的内存 都是主动调用, 这3中存储类型的变量根本就不用关注!
+     *  TODO 这给程序员管理的区域就只剩下 heap区域 或 free store区域了! 但这块非常重要, 不用delete 回收就会造成内存溢出!
      */
-
-
 
     return 0;
 }
