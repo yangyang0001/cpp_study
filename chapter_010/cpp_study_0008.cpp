@@ -50,7 +50,7 @@ int main() {
     cout << "------------------------------------------------------------------------------------------------------" << endl;
 
     // 最后回收 静态变量, 存储在 静态存储区
-    static Stock stock_s = Stock("static", 10000, 10000);
+    static Stock stock_s = Stock("stock_static", 10000, 10000);
 
     // FIXME heap区 或 free store 中的回收, 必须主动调用 delete 才能触发 析构函数的调用, 一旦delete就立刻触发, 所以 在C, C++中释放内存非常重要, 否则内存会满
     Stock * stock_new = new Stock("stock_new", 20000, 20000);
@@ -73,6 +73,36 @@ int main() {
     Stock stock_a, stock_b;
 
     cout << "------------------------------------------------------------------------------------------------------" << endl;
+
+    /**
+     * TODO 总结:
+     * 析构函数触发规则:
+     *      1、自动存储变量  执行时机: 自动存储变量在代码块执行完成后, 回收顺序: LIFO
+     *      2、静态存储变量  执行时机: 程序执行完成后触发析构函数调用
+     *      3、动态存储变量  执行时机: 调用delete时触发析构函数调用
+     *      4、临时内存变量  执行时机: 一旦赋值完成就立刻执行
+     *
+     * 本程序解析:
+     *  自动存储变量: stock1, stock2, stock3, stock_a, stock_b
+     *  临时内存变量: stock1 temp object, stock2 temp object
+     *  静态存储变量: stock_s
+     *  动态存储变量: stock_new
+     *
+     *  执行顺序如下:
+     *      ~ Stock() invoked, the company = DeepBlueGroup1      // stock1 temp object
+     *      ~ Stock() invoked, the company = DeepBlueGroup2      // stock2 temp object
+     *      ------------------------------------------------------------------------------------------------------
+     *      ~ Stock() invoked, the company = stock_new           // 动态存储变量回收 delete stock_new
+     *      ------------------------------------------------------------------------------------------------------
+     *      ~ Stock() invoked, the company = DeepBlueGroup       // stock_b
+     *      ~ Stock() invoked, the company = DeepBlueGroup       // stock_a
+     *      ~ Stock() invoked, the company = DeepBlueGroup       // stock3
+     *      ~ Stock() invoked, the company = DeepBlueGroup2      // stock2
+     *      ~ Stock() invoked, the company = DeepBlueGroup1      // stock1
+     *      ~ Stock() invoked, the company = stock_static        // 静态变量最后回收
+     *
+     */
+
 
 
     return 0;
