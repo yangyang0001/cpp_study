@@ -1,0 +1,62 @@
+//
+// Created by 杨建伟 on 2021/3/30.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0001.h"
+
+using namespace std;
+
+Time:: Time() {
+    this->hours = 0;
+    this->minutes = 0;
+}
+
+Time:: Time(int m_hours, int m_minutes) {
+    this->hours = m_hours >=0 ? m_hours : 0;
+    this->minutes = m_minutes >= 0 ? m_minutes : 0;
+}
+
+void Time:: addHou(int hou) {
+    this->hours += (hou >= 0 ? hou : 0);
+}
+
+void Time:: addMin(int min) {
+    this->minutes += (min >= 0 ? min : 0);
+}
+
+void Time:: reset(int m_hours, int m_minutes) {
+    this->hours = m_hours >=0 ? m_hours : 0;
+    this->minutes = m_minutes >= 0 ? m_minutes : 0;
+}
+
+Time Time:: sum(const Time & target) {
+    int min_2_hou = (target.minutes + this->minutes) / 60;
+    int left_min  = (target.minutes + this->minutes) % 60;
+    int left_hou  = target.hours + this->hours + min_2_hou;
+
+    return Time(left_hou, left_min);
+}
+
+void Time:: show() const {
+    cout << "hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
+// 重载+ 操作运算符
+Time Time:: operator+(const Time & target) {
+    int min_2_hou = (target.minutes + this->minutes) / 60;
+    int left_min  = (target.minutes + this->minutes) % 60;
+    int left_hou  = target.hours + hours + min_2_hou;
+
+    return Time(left_hou, left_min);
+}
+
