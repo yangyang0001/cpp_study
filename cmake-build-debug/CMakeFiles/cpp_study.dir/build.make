@@ -76,42 +76,42 @@ include CMakeFiles/cpp_study.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp_study.dir/flags.make
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.obj: ../chapter_010/cpp_study_0012_stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.obj"
-	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0012_stack.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_study_0012_stack.cpp
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.obj: ../chapter_010/cpp_lianxi_002.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.obj"
+	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_lianxi_002.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_lianxi_002.cpp
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.i"
-	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_study_0012_stack.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0012_stack.cpp.i
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.i"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_lianxi_002.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_lianxi_002.cpp.i
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.s"
-	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_study_0012_stack.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0012_stack.cpp.s
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.s"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_lianxi_002.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_lianxi_002.cpp.s
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.obj: ../chapter_010/cpp_study_0012.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.obj"
-	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0012.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_study_0012.cpp
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.obj: CMakeFiles/cpp_study.dir/flags.make
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.obj: ../chapter_010/cpp_lianxi_002_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.obj"
+	"D:\Program Files\MinGW\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cpp_study.dir\chapter_010\cpp_lianxi_002_impl.cpp.obj -c D:\CLionProjects\cpp_study\chapter_010\cpp_lianxi_002_impl.cpp
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.i"
-	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_study_0012.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0012.cpp.i
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.i"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\cpp_study\chapter_010\cpp_lianxi_002_impl.cpp > CMakeFiles\cpp_study.dir\chapter_010\cpp_lianxi_002_impl.cpp.i
 
-CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.s"
-	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_study_0012.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_study_0012.cpp.s
+CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.s"
+	"D:\Program Files\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\cpp_study\chapter_010\cpp_lianxi_002_impl.cpp -o CMakeFiles\cpp_study.dir\chapter_010\cpp_lianxi_002_impl.cpp.s
 
 # Object files for target cpp_study
 cpp_study_OBJECTS = \
-"CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.obj" \
-"CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.obj"
+"CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.obj" \
+"CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.obj"
 
 # External object files for target cpp_study
 cpp_study_EXTERNAL_OBJECTS =
 
-cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012_stack.cpp.obj
-cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_study_0012.cpp.obj
+cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002.cpp.obj
+cpp_study.exe: CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.obj
 cpp_study.exe: CMakeFiles/cpp_study.dir/build.make
 cpp_study.exe: CMakeFiles/cpp_study.dir/linklibs.rsp
 cpp_study.exe: CMakeFiles/cpp_study.dir/objects1.rsp
