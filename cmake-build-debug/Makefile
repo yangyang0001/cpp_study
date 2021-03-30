@@ -142,33 +142,6 @@ cpp_study/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/build
 .PHONY : cpp_study/fast
 
-chapter_010/cpp_lianxi_002_impl.obj: chapter_010/cpp_lianxi_002_impl.cpp.obj
-
-.PHONY : chapter_010/cpp_lianxi_002_impl.obj
-
-# target to build an object file
-chapter_010/cpp_lianxi_002_impl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.obj
-.PHONY : chapter_010/cpp_lianxi_002_impl.cpp.obj
-
-chapter_010/cpp_lianxi_002_impl.i: chapter_010/cpp_lianxi_002_impl.cpp.i
-
-.PHONY : chapter_010/cpp_lianxi_002_impl.i
-
-# target to preprocess a source file
-chapter_010/cpp_lianxi_002_impl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.i
-.PHONY : chapter_010/cpp_lianxi_002_impl.cpp.i
-
-chapter_010/cpp_lianxi_002_impl.s: chapter_010/cpp_lianxi_002_impl.cpp.s
-
-.PHONY : chapter_010/cpp_lianxi_002_impl.s
-
-# target to generate assembly for a file
-chapter_010/cpp_lianxi_002_impl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_010/cpp_lianxi_002_impl.cpp.s
-.PHONY : chapter_010/cpp_lianxi_002_impl.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +151,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cpp_study
-	@echo ... chapter_010/cpp_lianxi_002_impl.obj
-	@echo ... chapter_010/cpp_lianxi_002_impl.i
-	@echo ... chapter_010/cpp_lianxi_002_impl.s
 .PHONY : help
 
 

@@ -12,7 +12,7 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
-# include "cpp_lianxi_002.h"
+# include "cpp_lianxi_002.h_"
 
 using namespace std;
 
@@ -20,6 +20,11 @@ int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
 
     BankAccount account = BankAccount("YangJianWei", "18765829080", 1000);
+    account.show();
+
+    cout << "------------------------------------------------------------------------------------------------------" << endl;
+
+    account.set_balance(20000);
     account.show();
 
     cout << "------------------------------------------------------------------------------------------------------" << endl;
