@@ -42,6 +42,13 @@ int main() {
     total = coding + fixing;
     total.show();
 
+    Time a = Time(1, 20);
+    Time b = Time(2, 21);
+    Time c = Time(3, 22);
+    // 这种方式的加法 注意加的顺序, 据书籍中介绍为: a + b + c => a + (b + c)
+    Time result = a + b + c;
+
+
     return 0;
 }
 
