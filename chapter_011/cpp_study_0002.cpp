@@ -1,0 +1,56 @@
+//
+// Created by 杨建伟 on 2021/4/1.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0002.h"
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    Time weeding(4, 35);
+    Time waxing(2, 47);
+    Time total;
+    Time diff;
+    Time adjusted;
+
+    cout << "weeding time = :" << endl;
+    weeding.show();
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    cout << "waxing time  = :" << endl;
+    waxing.show();
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    total = weeding + waxing;
+    cout << "total time   = :" << endl;
+    total.show();
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    diff = weeding - waxing;
+    cout << "diff  time   = :" << endl;
+    diff.show();
+
+    cout << "----------------------------------------------------------------------------------" << endl;
+
+    adjusted = weeding * 1.5;
+    cout << "adjusted time   = :" << endl;
+    adjusted.show();
+
+    return 0;
+}
+
+
