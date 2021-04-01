@@ -29,7 +29,7 @@ public:
     Time(int m_hours, int m_minutes);
     void addHou(int hou);
     void addMin(int min);
-    void reset(int m_hour = 0, int m_minute = 0);
+    void reset(int m_hours = 0, int m_minutes = 0);
     Time operator+(const Time & time);
     Time operator-(const Time & time);
     Time operator*(double n);

@@ -12,7 +12,7 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
-# include "cpp_study_0002.h"
+# include "cpp_study_0002.h_"
 
 using namespace std;
 
