@@ -1,0 +1,78 @@
+//
+// Created by 杨建伟 on 2021/4/3.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0003.h"
+
+using namespace std;
+
+Time::Time() {
+    this->hours = 0;
+    this->minutes = 0;
+}
+
+Time::Time(int m_hours, int m_minutes) {
+    this->hours = m_hours;
+    this->minutes = m_minutes;
+}
+
+Time:: ~Time() {
+    cout << "destructor ~Time() invoked, hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
+void Time::show() {
+    cout << "hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
+void Time::reset(int m_hours, int m_minutes) {
+    this->hours = m_hours;
+    this->minutes = m_minutes;
+}
+
+Time Time::operator + (const Time & time) {
+    Time sum;
+    int all_min = this->hours * 60 + this->minutes + time.hours * 60 + time.minutes;
+    int sum_hou = all_min / 60;
+    int sum_min = all_min % 60;
+    sum.reset(sum_hou, sum_min);
+    return sum;
+}
+
+Time Time::operator - (const Time & time) {
+    Time sub;
+    int abs_min = abs((this->hours * 60 + this->minutes) - (time.hours * 60 + time.minutes));
+    int sub_hou = abs_min / 60;
+    int sub_min = abs_min % 60;
+    sub.reset(sub_hou, sub_min);
+    return sub;
+}
+
+Time Time::operator * (int n) {
+    Time pro;
+    int pro_hou = (this->hours * 60 + this->minutes) * n / 60;
+    int pro_min = (this->hours * 60 + this->minutes) * n % 60;
+    pro.reset(pro_hou, pro_min);
+    return pro;
+}
+
+Time operator * (int n, const Time & time) {
+    Time pro;
+    int pro_hou = (time.hours * 60 + time.minutes) * n / 60;
+    int pro_min = (time.hours * 60 + time.minutes) * n % 60;
+    pro.reset(pro_hou, pro_min);
+    return pro;
+}
+
+
+
+
