@@ -611,13 +611,22 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0002_impl.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0003.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0003.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0003.h">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0003.h_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0003_impl.cpp">
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0003_impl.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0004.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0004.h_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_011/cpp_study_0004_impl.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/CMakeLists.txt">

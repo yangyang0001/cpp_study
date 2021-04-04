@@ -1,0 +1,48 @@
+//
+// Created by 杨建伟 on 2021/4/4.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0004.h_"
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    Time time_a = Time(1, 45);
+    Time time_b = Time(2, 15);
+
+    Time sum = time_a + time_b;
+    sum.show();
+    cout << "1 ----------------------------------------------------------------------------------" << endl;
+
+    Time sub = time_a - time_b;
+    sub.show();
+    cout << "2 ----------------------------------------------------------------------------------" << endl;
+
+    Time pro_a = time_a * 2;
+    pro_a.show();
+    cout << "3 ----------------------------------------------------------------------------------" << endl;
+
+    Time pro_b = 2 * time_b;
+    pro_b.show();
+    cout << "4 ----------------------------------------------------------------------------------" << endl;
+
+    cout << "operator << invoked, " << time_a << endl;
+    cout << "5 ----------------------------------------------------------------------------------" << endl;
+    // 析构函数执行: pro_b, pro_a, sub, sum, b, a
+
+    return 0;
+}
+
+

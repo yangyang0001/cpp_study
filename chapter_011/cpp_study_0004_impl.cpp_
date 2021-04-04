@@ -1,5 +1,5 @@
 //
-// Created by 杨建伟 on 2021/4/3.
+// Created by 杨建伟 on 2021/4/4.
 //
 
 # include <iostream>
@@ -12,7 +12,7 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
-# include "cpp_study_0003.h"
+# include "cpp_study_0004.h_"
 
 using namespace std;
 
@@ -26,12 +26,8 @@ Time::Time(int m_hours, int m_minutes) {
     this->minutes = m_minutes;
 }
 
-Time:: ~Time() {
-    cout << "destructor ~Time() invoked, hours = " << this->hours << ", minutes = " << this->minutes << endl;
-}
-
-void Time::show() {
-    cout << "hours = " << this->hours << ", minutes = " << this->minutes << endl;
+Time::~Time() {
+    cout << "destructor invoked, hours = " << this->hours << ", minutes = " << this->minutes << endl;
 }
 
 void Time::reset(int m_hours, int m_minutes) {
@@ -39,9 +35,13 @@ void Time::reset(int m_hours, int m_minutes) {
     this->minutes = m_minutes;
 }
 
+void Time::show() {
+    cout << "hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
 Time Time::operator + (const Time & time) {
     Time sum;
-    int all_min = this->hours * 60 + this->minutes + time.hours * 60 + time.minutes;
+    int all_min = this->hours * 60 + this->hours + time.hours * 60 + time.minutes;
     int sum_hou = all_min / 60;
     int sum_min = all_min % 60;
     sum.reset(sum_hou, sum_min);
@@ -50,9 +50,8 @@ Time Time::operator + (const Time & time) {
 
 Time Time::operator - (const Time & time) {
     Time sub;
-    int abs_min = abs((this->hours * 60 + this->minutes) - (time.hours * 60 + time.minutes));
-    int sub_hou = abs_min / 60;
-    int sub_min = abs_min % 60;
+    int sub_hou = abs((this->hours * 60 + this->minutes) - (time.hours * 60 + time.minutes)) / 60;
+    int sub_min = abs((this->hours * 60 + this->minutes) - (time.hours * 60 + time.minutes)) % 60;
     sub.reset(sub_hou, sub_min);
     return sub;
 }
@@ -73,6 +72,9 @@ Time operator * (int n, const Time & time) {
     return pro;
 }
 
-
+ostream & operator << (ostream & os, const Time & time) {
+    os << "hours = " << time.hours << ", mintues = " << time.minutes << " ";
+    return os;
+}
 
 
