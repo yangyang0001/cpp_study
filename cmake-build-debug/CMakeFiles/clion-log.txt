@@ -1,6 +1,4 @@
 "D:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\CLionProjects\cpp_study
 -- Configuring done
-CMake Error: Cannot determine link language for target "cpp_study".
-CMake Error: CMake can not determine linker language for target: cpp_study
 -- Generating done
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Build files have been written to: D:/CLionProjects/cpp_study/cmake-build-debug
