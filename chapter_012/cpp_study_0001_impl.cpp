@@ -44,6 +44,6 @@ StringBad::~StringBad() {
 }
 
 ostream & operator << (ostream & os, const StringBad & stringBad) {
-    os << stringBad.str << endl;
+    os << stringBad.str;
     return os;
 }
