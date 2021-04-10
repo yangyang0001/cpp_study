@@ -1,0 +1,41 @@
+//
+// Created by 杨建伟 on 2021/4/10.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+#ifndef CPP_STUDY_CPP_STUDY_0001_H
+#define CPP_STUDY_CPP_STUDY_0001_H
+
+class Time {
+private:
+    int hours;
+    int minutes;
+
+public:
+    Time();
+    Time(int m_hours, int m_minutes);
+    ~ Time();
+
+    void reset(int m_hours, int m_minutes);
+    void show(const Time & time) const;
+
+    Time operator + (const Time & time);
+    Time operator - (const Time & time);
+    Time operator * (int num);
+    friend Time operator * (int num, const Time & time);
+};
+
+
+#endif //CPP_STUDY_CPP_STUDY_0001_H

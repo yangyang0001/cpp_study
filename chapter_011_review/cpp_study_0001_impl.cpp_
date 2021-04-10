@@ -1,0 +1,79 @@
+//
+// Created by 杨建伟 on 2021/4/10.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0001.h_"
+
+using namespace std;
+
+Time::Time() {
+    this->hours = 0;
+    this->minutes = 0;
+    cout << "none param constructor invoked, hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
+Time::Time(int m_hours, int m_minutes) {
+    this->hours = m_hours;
+    this->minutes = m_minutes;
+    cout << "have param constructor invoked, hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
+Time::~Time() {
+    cout << "default destructor invoked, hours = " << this->hours << ", minutes = " << this->minutes << endl;
+}
+
+void Time::reset(int m_hours, int m_minutes) {
+    this->hours = m_hours;
+    this->minutes = m_minutes;
+}
+
+void Time::show(const Time &time) const {
+    cout << "show() invoked, hours = " << time.hours << ", minutes = " << time.minutes << endl;
+}
+
+Time Time::operator+(const Time &time) {
+    Time sum;   // TODO 这句定义变量用了哪些知识点? 什么方法?
+    cout << "Time Time:: operator + invoked!" << endl;
+    int sum_hou = (this->hours * 60 + this->minutes + time.hours * 60 + time.minutes) / 60;
+    int sum_min = (this->hours * 60 + this->minutes + time.hours * 60 + time.minutes) % 60;
+    sum.reset(sum_hou, sum_min);
+    return sum;
+}
+
+Time Time::operator-(const Time &time) {
+    Time sub;   // TODO 这句定义变量, 用了什么知识点? 什么方法?
+    cout << "Time Time:: operator - invoked!" << endl;
+    int sub_hou = abs((this->hours * 60 + this->minutes) - (time.hours * 60 + time.minutes)) / 60;
+    int sub_min = abs((this->hours * 60 + this->minutes) - (time.hours * 60 + time.minutes)) % 60;
+    sub.reset(sub_hou, sub_min);
+    return sub;
+}
+
+Time Time::operator*(int num) {
+    Time pro;   // TODO 这句定义变量, 用了什么知识点? 什么方法?
+    cout << "Time Time:: operator * invoked!" << endl;
+    int pro_hou = (this->hours * 60 + this->minutes) * num / 60;
+    int pro_min = (this->hours * 60 + this->minutes) * num % 60;
+    pro.reset(pro_hou, pro_min);
+    return pro;
+}
+
+Time operator * (int num, const Time & time) {
+    Time pro;   // TODO 这句定义变量, 用了什么知识点? 什么方法?
+    cout << "Time operator * invoked!" << endl;
+    int pro_hou = (time.hours * 60 + time.minutes) * num / 60;
+    int pro_min = (time.hours * 60 + time.minutes) * num % 60;
+    pro.reset(pro_hou, pro_min);
+    return pro;
+}
+
