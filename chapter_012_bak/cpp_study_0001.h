@@ -31,7 +31,10 @@ public:
     friend ostream & operator << (ostream & os, StringBad & stringBad);
 
     // 隐式复制构造函数原型
-    // StringBad(const StringBad & stirngBad);
+    StringBad(const StringBad & stringBad);
+
+    // 默认赋值运算符原型
+    StringBad & operator = (const StringBad & stringBad);
 };
 
 #endif //CPP_STUDY_CPP_STUDY_0001_H

@@ -50,12 +50,15 @@ int main() {
         cout << "4 ----------------------------------------------------------------------------------" << endl;
 
         cout << "Assgin one object to another:" << endl;    //
-        StringBad knot = headline1;                         // 触发隐式复制构造函数
+        StringBad knot;                         //
+        knot = headline1;                                   // 调用默认赋值运算符 原型为: Class_name & Class_name:: operator = (const Class_name &);
         cout << "knot = " << knot << endl;
         cout << "Exit the block!" << endl;
 
         cout << "5 ----------------------------------------------------------------------------------" << endl;
         // 结束后 按照 knot, sailor, sports, headline2, headline1 回收
+
+
     }
     cout << "End of main()!" << endl;
     return 0;
