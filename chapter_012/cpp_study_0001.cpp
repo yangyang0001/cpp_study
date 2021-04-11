@@ -1,5 +1,5 @@
 //
-// Created by 杨建伟 on 2021/4/5.
+// Created by 杨建伟 on 2021/4/10.
 //
 
 # include <iostream>
@@ -12,7 +12,7 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
-# include "cpp_study_0001.h_"
+# include "cpp_study_0001.h"
 
 using namespace std;
 
@@ -33,12 +33,12 @@ int main() {
 
         cout << "1 ----------------------------------------------------------------------------------" << endl;
 
-        callme1(headline1);                              // 不会触发隐式复制构造函数, 因为是引用传递
+        callme1(headline1);                             // 不会触发隐式复制构造函数, 因为是引用传递
         cout << "headline1 = " << headline1 << endl;        //
 
         cout << "2 ----------------------------------------------------------------------------------" << endl;
 
-        callme2(headline2);                                 // 触发隐式复制构造函数, 产生副本后一旦过期 触发析构函数调用 -1 num_strings = 2
+        callme2(headline2);                                 // 触发隐式复制构造函数, +1 理论上是num_strings = 3, 但没有显式定义, 故num_strings = 2
         cout << "headline2 = " << headline2 << endl;        //
 
         cout << "3 ----------------------------------------------------------------------------------" << endl;
@@ -50,7 +50,8 @@ int main() {
         cout << "4 ----------------------------------------------------------------------------------" << endl;
 
         cout << "Assgin one object to another:" << endl;    //
-        StringBad knot = headline1;                         // 触发隐式复制构造函数
+        StringBad knot;                                     //
+        knot = headline1;                                   // 调用默认赋值运算符 原型为: Class_name & Class_name:: operator = (const Class_name &);
         cout << "knot = " << knot << endl;
         cout << "Exit the block!" << endl;
 
@@ -70,5 +71,6 @@ void callme2(StringBad stringBad) {
     cout << "String passed by value:" << endl;
     cout << "value stringBad = " << stringBad << endl;
 }
+
 
 

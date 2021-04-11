@@ -38,8 +38,8 @@ StringBad::StringBad(const char * s) {
 
 StringBad::~StringBad() {
     num_strings --;
-    delete[] str;
     cout << "~StringBad() destructor invoked, str = " << this->str << ", len = " << this->len << ", num_strings = " << num_strings << endl;
+    delete[] str;
 }
 
 ostream & operator << (ostream & os, StringBad & stringBad) {
@@ -52,9 +52,9 @@ StringBad::StringBad(const StringBad & stringBad) {
     len = stringBad.len;
     str = new char[len + 1];
     strcpy(str, stringBad.str);
-    str[len] = '0';
+    str[len] = '\0';
     num_strings ++;
-    cout << "assignment constructor invoked, str = " << this->str << ", len = " << this->len << ", num_strings = " << num_strings << endl;
+    cout << "copy constructor invoked, str = " << this->str << ", len = " << this->len << ", num_strings = " << num_strings << endl;
 }
 
 // 新概念: 默认赋值运算符 显式化定义
@@ -65,17 +65,17 @@ StringBad & StringBad:: operator = (const StringBad & stringBad) {
     }
 
     // 先释放掉当前调用者的动态内存
+    num_strings --;
     cout << "before assignment operator = invoked, str = " << this->str << ", len = " << this->len << ", num_strings = " << num_strings << endl;
     delete[] str;
-    num_strings --;
 
     // 让当前的调用对象 指向新的内存空间
     len = stringBad.len;
     str = new char[len + 1];
     strcpy(str, stringBad.str);
-    str[len] = '0';
+    str[len] = '\0';
     num_strings ++;
-    cout << "after assignment operator = invoked, str = " << this->str << ", len = " << this->len << ", num_strings = " << num_strings << endl;
+    cout << "after  assignment operator = invoked, str = " << this->str << ", len = " << this->len << ", num_strings = " << num_strings << endl;
 
     return * this;
 };
