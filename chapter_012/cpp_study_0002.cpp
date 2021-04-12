@@ -1,0 +1,77 @@
+//
+// Created by 杨建伟 on 2021/4/13.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0002.h"
+
+using namespace std;
+
+void callme1(String  & String);
+void callme2(String String);
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    {
+        cout << "Starting inner block!" << endl;
+        String headline1("Celery Stalks at Midnight");          // num_strings = 1
+        String headline2("Lettuce Prey");                       // num_strings = 2
+        String sports("Spinach Leaves Bowl for Dollars");       // num_strings = 3
+
+        cout << "headline1 = " << headline1 << endl;
+        cout << "headline2 = " << headline2 << endl;
+        cout << "sports    = " << sports << endl;
+
+        cout << "1 ----------------------------------------------------------------------------------" << endl;
+
+        callme1(headline1);
+        cout << "headline1 = " << headline1 << endl;
+
+        cout << "2 ----------------------------------------------------------------------------------" << endl;
+
+        callme2(headline2);                                     // num_strings = 4, 3
+        cout << "headline2 = " << headline2 << endl;
+
+        cout << "3 ----------------------------------------------------------------------------------" << endl;
+
+        cout << "Initialize one object to another:" << endl;
+        String sailor = sports;                                 // num_strings = 4
+        cout << "sailor = " << sailor << endl;
+
+        cout << "4 ----------------------------------------------------------------------------------" << endl;
+
+        cout << "Assgin one object to another:" << endl;
+        String knot;                                            // num_strings = 5
+        knot = headline1;                                       // num_strings = 4, 5
+        cout << "knot = " << knot << endl;
+        cout << "Exit the block!" << endl;
+
+        cout << "5 ----------------------------------------------------------------------------------" << endl;
+        // 结束后 按照 knot, sailor, sports, headline2, headline1 回收
+    }
+    cout << "End of main()!" << endl;
+    
+    return 0;
+}
+
+void callme1(String & m_string) {
+    cout << "String passed by reference:" << endl;
+    cout << "reference String = " << m_string << endl;
+}
+
+void callme2(String m_string) {
+    cout << "String passed by value:" << endl;
+    cout << "value String = " << m_string << endl;
+}
+
+
+
