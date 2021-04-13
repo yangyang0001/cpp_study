@@ -38,6 +38,11 @@ public:
     // 赋值运算符
     String & operator = (const String & m_string);
 
+    // 添加比较成员函数
+    bool operator < (const String & m_string);
+
+    bool operator > (const String & m_string);
+
 
 };
 

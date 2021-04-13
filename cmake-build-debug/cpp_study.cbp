@@ -645,13 +645,16 @@
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0001_impl.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002.cpp">
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002.h">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002_impl.cpp">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0003.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/CMakeLists.txt">

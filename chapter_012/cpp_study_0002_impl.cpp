@@ -75,5 +75,21 @@ String & String::operator = (const String & m_string) {
     return * this;
 }
 
+bool String::operator < (const String & n_string) {
+    if(strcmp(this->str, n_string.str) < 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool String::operator > (const String & n_string) {
+    if(strcmp(n_string.str, this->str) < 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 
