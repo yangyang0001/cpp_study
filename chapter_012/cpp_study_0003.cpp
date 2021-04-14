@@ -20,18 +20,30 @@ int main() {
     cout.setf(ios_base::fixed, ios_base::floatfield);
     cout.setf(ios_base::boolalpha);
 
-    char * aa = "111";
-    char * bb = "123";
-    cout << strcmp(aa, bb) << endl;
-    cout << strcmp(bb, aa) << endl;
+    char * aa = new char[5];
+    strcpy(aa, "1111");
+    aa[5] = '\0';
+
+    char * bb = new char[5];
+    strcpy(bb, "2222");
+    aa[5] = '\0';
+
+    cout << "strcmp(aa, bb) = " << strcmp(aa, bb) << endl;
+    cout << "strcmp(bb, aa) = " << strcmp(bb, aa) << endl;
 
     String mm = String("1234");
-    String nn = String("1000");
+    String nn = String("0000");
 
     bool flag_mm = mm < nn;
     bool flag_nn = mm > nn;
+
     cout << "falg_mm = " << flag_mm << endl;
     cout << "flag_nn = " << flag_nn << endl;
+
+    String pp = String("abc");
+    String qq = String("abcd");
+    bool flag_pq = pp == qq;
+    cout << "flag_pq = " << flag_pq << endl;
 
     return 0;
 }
