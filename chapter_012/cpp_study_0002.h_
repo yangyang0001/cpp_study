@@ -23,6 +23,7 @@ private:
     char * str;
     int len;
     static int num_strings;
+    static int CINLIM;
 
 public:
     String();
@@ -47,6 +48,14 @@ public:
     // 添加 operator == 成员函数
     bool operator == (const String & m_string);
 
+    // 添加中括号运算符 operator [] 成员函数
+    char & operator [] (int n);
+
+    // 静态成员函数
+    static int how_many_strings();
+
+    // 运算符重载 operator >> 的使用
+    friend istream & operator >> (istream & is, String & st);
 
 };
 

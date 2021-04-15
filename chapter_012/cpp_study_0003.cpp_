@@ -1,0 +1,81 @@
+//
+// Created by 杨建伟 on 2021/4/14.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0002.h_"
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout.setf(ios_base::boolalpha);
+
+    // 原始 strcmp(const char * dest, const char * source) 的使用
+    // char * aa = new char[5];
+    // strcpy(aa, "1111");
+    // aa[5] = '\0';
+    // char * bb = new char[5];
+    // strcpy(bb, "2222");
+    // aa[5] = '\0';
+    // cout << "strcmp(aa, bb) = " << strcmp(aa, bb) << endl;
+    // cout << "strcmp(bb, aa) = " << strcmp(bb, aa) << endl;
+    // delete [] aa;
+    // delete [] bb;
+    // cout << "1 ----------------------------------------------------------------------------------" << endl;
+
+    // 运算符重载 operator < (), opeartor > () 的使用
+    // String mm = String("1234");
+    // String nn = String("0000");
+    // bool flag_mm = mm < nn;
+    // bool flag_nn = mm > nn;
+    // cout << "falg_mm = " << flag_mm << endl;
+    // cout << "flag_nn = " << flag_nn << endl;
+    // cout << "2 ----------------------------------------------------------------------------------" << endl;
+
+    // 运算符重载 operator == 的使用
+    // String pp = String("abc");
+    // String qq = String("abcd");
+    // bool flag_pq = pp == qq;
+    // cout << "flag_pq = " << flag_pq << endl;
+    // cout << "3 ----------------------------------------------------------------------------------" << endl;
+
+    // 运算符重载 operator [] 的使用
+    // String opera = String("ABCDEFGHIJKLMNOPQRSTWVUXYZ0123456789abcdefghijklmnopqrstwvuxyz");
+    // cout << "opera[" << 4 << "] = " << opera[4] << endl;
+    // cout << "4 ----------------------------------------------------------------------------------" << endl;
+
+    // int count = String::how_many_strings();
+    // cout << "count = " << count << endl;
+    // cout << "5 ----------------------------------------------------------------------------------" << endl;
+
+    String name;
+//    不推荐使用
+//    char * temp = new char[40];
+//    cin.getline(temp, 40);
+//    name = String(temp);
+//    cin.clear();
+    cout << "6 ----------------------------------------------------------------------------------" << endl;
+
+    cin >> name;
+    cout << "name = " << name << endl;
+    cout << "7 ----------------------------------------------------------------------------------" << endl;
+
+
+
+
+
+
+    return 0;
+}
+
+

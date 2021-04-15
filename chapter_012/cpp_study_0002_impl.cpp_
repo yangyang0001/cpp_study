@@ -12,11 +12,12 @@
 # include <cctype>
 # include <cmath>
 # include <fstream>
-# include "cpp_study_0002.h"
+# include "cpp_study_0002.h_"
 
 using namespace std;
 
 int String::num_strings = 0;
+int String::CINLIM = 40;
 
 String::String() {
     len = 0;
@@ -93,6 +94,22 @@ bool String::operator > (const String & m_string) {
 
 bool String::operator == (const String & m_string) {
     return strcmp(this->str, m_string.str) == 0;
+}
+
+char & String::operator[](int n) {
+    return str[n];
+}
+
+int String::how_many_strings() {
+    return num_strings;
+}
+
+istream & operator >> (istream & is, String & m_string) {
+    char * temp = new char[String::CINLIM];
+    is.get(temp, String::CINLIM);
+    strcpy(m_string.str, temp);
+    delete [] temp;
+    return is;
 }
 
 
