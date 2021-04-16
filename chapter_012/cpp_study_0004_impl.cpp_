@@ -1,0 +1,69 @@
+//
+// Created by 杨建伟 on 2021/4/15.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0004.h_"
+
+using namespace std;
+
+MineNo::MineNo() {
+    // do noting
+}
+
+MineNo::MineNo(const int m_number) {
+    this->number = m_number;
+}
+
+void MineNo::show() {
+    cout << "number = " << this->number << endl;
+}
+
+void MineNo::reset(int m_number) {
+    this->number = m_number;
+}
+
+// 返回 const对象引用
+const MineNo & mine_max(const MineNo & mineNo1, const MineNo & mineNo2) {
+    if(mineNo1.number >= mineNo2.number) {
+        return mineNo1;
+    } else {
+        return mineNo2;
+    }
+}
+
+// 返回 非const对象引用
+ostream & operator << (ostream & os, const MineNo & mineNo) {
+    os << "mineNo.number = " << mineNo.number << endl;
+    return os;
+}
+
+// 返回 const对象的使用
+const MineNo mine_min(const MineNo & mineNo1, const MineNo & mineNo2) {
+    if(mineNo1.number <= mineNo2.number) {
+        return mineNo1;
+    } else {
+        return mineNo2;
+    }
+}
+
+MineNo mine_sum(const MineNo & mineNo1, const MineNo & mineNo2) {
+    MineNo sumNo;
+    sumNo.reset(mineNo1.number + mineNo2.number);
+    return sumNo;
+}
+
+
+
+
+
+

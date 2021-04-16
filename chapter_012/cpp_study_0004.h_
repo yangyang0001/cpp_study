@@ -1,0 +1,45 @@
+//
+// Created by 杨建伟 on 2021/4/15.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+#ifndef CPP_STUDY_CPP_STUDY_0004_H
+#define CPP_STUDY_CPP_STUDY_0004_H
+
+class MineNo{
+private:
+    int number;
+
+public:
+    MineNo();
+    MineNo(const int m_number);
+    void show();
+    void reset(int m_number);
+
+    // 返回指向  const  对象的引用
+    friend const MineNo & mine_max(const MineNo & mineNo1, const MineNo & mineNo2);
+
+    // 返回指向 非const 对象的引用  友元函数 重新定义 operator <<
+    friend ostream & operator << (ostream & os, const MineNo & mineNo);
+
+    // 返回  const  对象
+    friend const MineNo mine_min(const MineNo & mineNo1, const MineNo & mineNo2);
+
+    // 返回 非const 对象
+    friend MineNo mine_sum(const MineNo & mineNo1, const MineNo & mineNo2);
+
+};
+
+#endif //CPP_STUDY_CPP_STUDY_0004_H

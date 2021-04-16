@@ -1,0 +1,41 @@
+//
+// Created by 杨建伟 on 2021/4/15.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+# include "cpp_study_0004.h_"
+
+using namespace std;
+
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    MineNo mineNo1 = MineNo(1);
+    MineNo mineNo2 = MineNo(100);
+
+    // 使用返回 const对象引用
+    const MineNo & maxNo = mine_max(mineNo1, mineNo2);
+    // 使用返回 非const对象引用
+    cout << "maxNo = " << maxNo << endl;
+
+    // 返回  const  对象
+    const MineNo minNo =  mine_min(mineNo1, mineNo2);
+    cout << "minNo = " << minNo << endl;
+
+    // 返回 非const 对象
+    MineNo sumNo = mine_sum(mineNo1, mineNo2);
+    cout << "sumNo = " << sumNo << endl;
+
+    return 0;
+}
+
+
