@@ -671,6 +671,9 @@
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_012/cpp_study_0004_impl.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_study_video/cpp_study_0001.cpp">
+			<Option target="cpp_study"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

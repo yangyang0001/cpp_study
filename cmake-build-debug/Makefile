@@ -196,6 +196,33 @@ chapter_012/cpp_study_0002_impl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.s
 .PHONY : chapter_012/cpp_study_0002_impl.cpp.s
 
+chapter_study_video/cpp_study_0001.obj: chapter_study_video/cpp_study_0001.cpp.obj
+
+.PHONY : chapter_study_video/cpp_study_0001.obj
+
+# target to build an object file
+chapter_study_video/cpp_study_0001.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_study_video/cpp_study_0001.cpp.obj
+.PHONY : chapter_study_video/cpp_study_0001.cpp.obj
+
+chapter_study_video/cpp_study_0001.i: chapter_study_video/cpp_study_0001.cpp.i
+
+.PHONY : chapter_study_video/cpp_study_0001.i
+
+# target to preprocess a source file
+chapter_study_video/cpp_study_0001.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_study_video/cpp_study_0001.cpp.i
+.PHONY : chapter_study_video/cpp_study_0001.cpp.i
+
+chapter_study_video/cpp_study_0001.s: chapter_study_video/cpp_study_0001.cpp.s
+
+.PHONY : chapter_study_video/cpp_study_0001.s
+
+# target to generate assembly for a file
+chapter_study_video/cpp_study_0001.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_study_video/cpp_study_0001.cpp.s
+.PHONY : chapter_study_video/cpp_study_0001.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -211,6 +238,9 @@ help:
 	@echo ... chapter_012/cpp_study_0002_impl.obj
 	@echo ... chapter_012/cpp_study_0002_impl.i
 	@echo ... chapter_012/cpp_study_0002_impl.s
+	@echo ... chapter_study_video/cpp_study_0001.obj
+	@echo ... chapter_study_video/cpp_study_0001.i
+	@echo ... chapter_study_video/cpp_study_0001.s
 .PHONY : help
 
 
