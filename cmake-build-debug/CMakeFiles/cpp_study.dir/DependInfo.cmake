@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CLionProjects/cpp_study/chapter_012/cpp_lianxi_001.cpp" "D:/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_012/cpp_lianxi_001.cpp.obj"
-  "D:/CLionProjects/cpp_study/chapter_012/cpp_study_0002_impl.cpp" "D:/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.obj"
-  "D:/CLionProjects/cpp_study/chapter_study_video/cpp_study_0001.cpp" "D:/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_study_video/cpp_study_0001.cpp.obj"
+  "/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002_impl.cpp" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.o"
+  "/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o"
+  "/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
