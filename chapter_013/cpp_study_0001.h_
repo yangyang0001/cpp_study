@@ -32,7 +32,18 @@ public:
 };
 
 
-class MinePingPangPlayer : public PingPangPlayer {
+class RatedPlayer : public PingPangPlayer {
+private:
+    int rating;
+public:
+    RatedPlayer();
+    RatedPlayer(int r, const string & fn, const string & ln, bool ht);
+    RatedPlayer(int r, const PingPangPlayer & player);
+
+    void resetRating(int r);
+    void getRating();
+
+
 
 };
 
