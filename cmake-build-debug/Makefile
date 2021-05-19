@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/4b/rp5sydj14cz0vhcmqm7p2vgc0000gn/T/AppTranslocation/ADE2677E-9A9D-4F20-9FED-5232567EAFF6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/4b/rp5sydj14cz0vhcmqm7p2vgc0000gn/T/AppTranslocation/ADE2677E-9A9D-4F20-9FED-5232567EAFF6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/4b/rp5sydj14cz0vhcmqm7p2vgc0000gn/T/AppTranslocation/ADE2677E-9A9D-4F20-9FED-5232567EAFF6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/4b/rp5sydj14cz0vhcmqm7p2vgc0000gn/T/AppTranslocation/ADE2677E-9A9D-4F20-9FED-5232567EAFF6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -143,6 +143,33 @@ cpp_study/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/build
 .PHONY : cpp_study/fast
 
+HelloWorld.o: HelloWorld.c.o
+
+.PHONY : HelloWorld.o
+
+# target to build an object file
+HelloWorld.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/HelloWorld.c.o
+.PHONY : HelloWorld.c.o
+
+HelloWorld.i: HelloWorld.c.i
+
+.PHONY : HelloWorld.i
+
+# target to preprocess a source file
+HelloWorld.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/HelloWorld.c.i
+.PHONY : HelloWorld.c.i
+
+HelloWorld.s: HelloWorld.c.s
+
+.PHONY : HelloWorld.s
+
+# target to generate assembly for a file
+HelloWorld.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/HelloWorld.c.s
+.PHONY : HelloWorld.c.s
+
 chapter_012/cpp_study_0002_impl.o: chapter_012/cpp_study_0002_impl.cpp.o
 
 .PHONY : chapter_012/cpp_study_0002_impl.o
@@ -170,60 +197,6 @@ chapter_012/cpp_study_0002_impl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.s
 .PHONY : chapter_012/cpp_study_0002_impl.cpp.s
 
-chapter_013/cpp_study_0001.o: chapter_013/cpp_study_0001.cpp.o
-
-.PHONY : chapter_013/cpp_study_0001.o
-
-# target to build an object file
-chapter_013/cpp_study_0001.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o
-.PHONY : chapter_013/cpp_study_0001.cpp.o
-
-chapter_013/cpp_study_0001.i: chapter_013/cpp_study_0001.cpp.i
-
-.PHONY : chapter_013/cpp_study_0001.i
-
-# target to preprocess a source file
-chapter_013/cpp_study_0001.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.i
-.PHONY : chapter_013/cpp_study_0001.cpp.i
-
-chapter_013/cpp_study_0001.s: chapter_013/cpp_study_0001.cpp.s
-
-.PHONY : chapter_013/cpp_study_0001.s
-
-# target to generate assembly for a file
-chapter_013/cpp_study_0001.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.s
-.PHONY : chapter_013/cpp_study_0001.cpp.s
-
-chapter_013/cpp_study_0001_impl.o: chapter_013/cpp_study_0001_impl.cpp.o
-
-.PHONY : chapter_013/cpp_study_0001_impl.o
-
-# target to build an object file
-chapter_013/cpp_study_0001_impl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o
-.PHONY : chapter_013/cpp_study_0001_impl.cpp.o
-
-chapter_013/cpp_study_0001_impl.i: chapter_013/cpp_study_0001_impl.cpp.i
-
-.PHONY : chapter_013/cpp_study_0001_impl.i
-
-# target to preprocess a source file
-chapter_013/cpp_study_0001_impl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.i
-.PHONY : chapter_013/cpp_study_0001_impl.cpp.i
-
-chapter_013/cpp_study_0001_impl.s: chapter_013/cpp_study_0001_impl.cpp.s
-
-.PHONY : chapter_013/cpp_study_0001_impl.s
-
-# target to generate assembly for a file
-chapter_013/cpp_study_0001_impl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_study.dir/build.make CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.s
-.PHONY : chapter_013/cpp_study_0001_impl.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,15 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_study"
+	@echo "... HelloWorld.o"
+	@echo "... HelloWorld.i"
+	@echo "... HelloWorld.s"
 	@echo "... chapter_012/cpp_study_0002_impl.o"
 	@echo "... chapter_012/cpp_study_0002_impl.i"
 	@echo "... chapter_012/cpp_study_0002_impl.s"
-	@echo "... chapter_013/cpp_study_0001.o"
-	@echo "... chapter_013/cpp_study_0001.i"
-	@echo "... chapter_013/cpp_study_0001.s"
-	@echo "... chapter_013/cpp_study_0001_impl.o"
-	@echo "... chapter_013/cpp_study_0001_impl.i"
-	@echo "... chapter_013/cpp_study_0001_impl.s"
 .PHONY : help
 
 

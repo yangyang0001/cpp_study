@@ -1,12 +1,19 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/Users/yangjianwei/CLionProjects/cpp_study/HelloWorld.c" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/HelloWorld.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "AppleClang")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002_impl.cpp" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.o"
-  "/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o"
-  "/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp" "/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

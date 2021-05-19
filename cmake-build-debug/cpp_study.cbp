@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/HelloWorld.c">
+			<Option target="cpp_study"/>
+		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_002/cpp_lianxi_001.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
@@ -669,13 +672,13 @@
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0004_impl.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp">
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.h">
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.h_">
 			<Option target="cpp_study"/>
 		</Unit>
-		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp">
+		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="/Users/yangjianwei/CLionProjects/cpp_study/CMakeLists.txt">

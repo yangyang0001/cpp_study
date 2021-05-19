@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/4b/rp5sydj14cz0vhcmqm7p2vgc0000gn/T/AppTranslocation/ADE2677E-9A9D-4F20-9FED-5232567EAFF6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/4b/rp5sydj14cz0vhcmqm7p2vgc0000gn/T/AppTranslocation/ADE2677E-9A9D-4F20-9FED-5232567EAFF6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -90,47 +90,32 @@ CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yangjianwei/CLionProjects/cpp_study/chapter_012/cpp_study_0002_impl.cpp -o CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.s
 
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o: CMakeFiles/cpp_study.dir/flags.make
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o: ../chapter_013/cpp_study_0001.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o -c /Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp
+CMakeFiles/cpp_study.dir/HelloWorld.c.o: CMakeFiles/cpp_study.dir/flags.make
+CMakeFiles/cpp_study.dir/HelloWorld.c.o: ../HelloWorld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cpp_study.dir/HelloWorld.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cpp_study.dir/HelloWorld.c.o   -c /Users/yangjianwei/CLionProjects/cpp_study/HelloWorld.c
 
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp > CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.i
+CMakeFiles/cpp_study.dir/HelloWorld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cpp_study.dir/HelloWorld.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/yangjianwei/CLionProjects/cpp_study/HelloWorld.c > CMakeFiles/cpp_study.dir/HelloWorld.c.i
 
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001.cpp -o CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.s
-
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o: CMakeFiles/cpp_study.dir/flags.make
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o: ../chapter_013/cpp_study_0001_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o -c /Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp
-
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp > CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.i
-
-CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yangjianwei/CLionProjects/cpp_study/chapter_013/cpp_study_0001_impl.cpp -o CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.s
+CMakeFiles/cpp_study.dir/HelloWorld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpp_study.dir/HelloWorld.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/yangjianwei/CLionProjects/cpp_study/HelloWorld.c -o CMakeFiles/cpp_study.dir/HelloWorld.c.s
 
 # Object files for target cpp_study
 cpp_study_OBJECTS = \
 "CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.o" \
-"CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o" \
-"CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o"
+"CMakeFiles/cpp_study.dir/HelloWorld.c.o"
 
 # External object files for target cpp_study
 cpp_study_EXTERNAL_OBJECTS =
 
 cpp_study: CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.o
-cpp_study: CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001.cpp.o
-cpp_study: CMakeFiles/cpp_study.dir/chapter_013/cpp_study_0001_impl.cpp.o
+cpp_study: CMakeFiles/cpp_study.dir/HelloWorld.c.o
 cpp_study: CMakeFiles/cpp_study.dir/build.make
 cpp_study: CMakeFiles/cpp_study.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cpp_study"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yangjianwei/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp_study"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_study.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
