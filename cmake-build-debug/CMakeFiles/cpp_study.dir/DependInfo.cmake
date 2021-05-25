@@ -1,18 +1,10 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "D:/CLionProjects/cpp_study/HelloWorld.c" "D:/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/HelloWorld.c.obj"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/CLionProjects/cpp_study/chapter_007/cpp_study_0013.cpp" "D:/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_007/cpp_study_0013.cpp.obj"
   "D:/CLionProjects/cpp_study/chapter_012/cpp_study_0002_impl.cpp" "D:/CLionProjects/cpp_study/cmake-build-debug/CMakeFiles/cpp_study.dir/chapter_012/cpp_study_0002_impl.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLionProjects/cpp_study/HelloWorld.c">
+		<Unit filename="D:/CLionProjects/cpp_study/HelloWorld.c_">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_002/cpp_lianxi_001.cpp_">
@@ -390,6 +390,9 @@
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_007/cpp_study_0012.cpp_">
+			<Option target="cpp_study"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/cpp_study/chapter_007/cpp_study_0013.cpp">
 			<Option target="cpp_study"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/cpp_study/chapter_008/cpp_lianxi_001.cpp_">

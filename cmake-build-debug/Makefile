@@ -142,32 +142,32 @@ cpp_study/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/build
 .PHONY : cpp_study/fast
 
-HelloWorld.obj: HelloWorld.c.obj
+chapter_007/cpp_study_0013.obj: chapter_007/cpp_study_0013.cpp.obj
 
-.PHONY : HelloWorld.obj
+.PHONY : chapter_007/cpp_study_0013.obj
 
 # target to build an object file
-HelloWorld.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/HelloWorld.c.obj
-.PHONY : HelloWorld.c.obj
+chapter_007/cpp_study_0013.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_007/cpp_study_0013.cpp.obj
+.PHONY : chapter_007/cpp_study_0013.cpp.obj
 
-HelloWorld.i: HelloWorld.c.i
+chapter_007/cpp_study_0013.i: chapter_007/cpp_study_0013.cpp.i
 
-.PHONY : HelloWorld.i
+.PHONY : chapter_007/cpp_study_0013.i
 
 # target to preprocess a source file
-HelloWorld.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/HelloWorld.c.i
-.PHONY : HelloWorld.c.i
+chapter_007/cpp_study_0013.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_007/cpp_study_0013.cpp.i
+.PHONY : chapter_007/cpp_study_0013.cpp.i
 
-HelloWorld.s: HelloWorld.c.s
+chapter_007/cpp_study_0013.s: chapter_007/cpp_study_0013.cpp.s
 
-.PHONY : HelloWorld.s
+.PHONY : chapter_007/cpp_study_0013.s
 
 # target to generate assembly for a file
-HelloWorld.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/HelloWorld.c.s
-.PHONY : HelloWorld.c.s
+chapter_007/cpp_study_0013.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpp_study.dir\build.make CMakeFiles/cpp_study.dir/chapter_007/cpp_study_0013.cpp.s
+.PHONY : chapter_007/cpp_study_0013.cpp.s
 
 chapter_012/cpp_study_0002_impl.obj: chapter_012/cpp_study_0002_impl.cpp.obj
 
@@ -205,9 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cpp_study
-	@echo ... HelloWorld.obj
-	@echo ... HelloWorld.i
-	@echo ... HelloWorld.s
+	@echo ... chapter_007/cpp_study_0013.obj
+	@echo ... chapter_007/cpp_study_0013.i
+	@echo ... chapter_007/cpp_study_0013.s
 	@echo ... chapter_012/cpp_study_0002_impl.obj
 	@echo ... chapter_012/cpp_study_0002_impl.i
 	@echo ... chapter_012/cpp_study_0002_impl.s
