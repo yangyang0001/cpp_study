@@ -1,0 +1,54 @@
+//
+// Created by 杨建伟 on 2021/5/25.
+//
+
+# include <iostream>
+# include <climits>
+# include <string>
+# include <cstring>
+# include <vector>
+# include <array>
+# include <ctime>
+# include <cctype>
+# include <cmath>
+# include <fstream>
+
+using namespace std;
+
+double betsy(int lines);
+double pam(int lines);
+
+void estimate(int lines, double (*pf) (int lines));
+
+/**
+ * 函数指针 示例
+ * @return
+ */
+int main() {
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+
+    int lines;
+    cout << "plase enter the lines :" << endl;
+    cin >> lines;
+
+    cout << "besty function :" << endl;
+    estimate(lines, betsy);
+    cout << "pam   function :" << endl;
+    estimate(lines, pam);
+
+    return 0;
+}
+
+double betsy(int lines) {
+    return 0.05 * lines;
+}
+
+double pam(int lines) {
+    return 0.03 * lines + 0.0004 * lines * lines;
+}
+
+void estimate (int lines, double (*pf) (int lines)) {
+    cout << "lines = " << lines << " will take " << pf(lines) << " hours" << endl;
+}
+
+
